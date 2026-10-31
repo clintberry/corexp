@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Kindness Agent badge">
+  <defs>
+    <path id="arc-top" d="M 67,200 A 133,133 0 0 1 333,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#8e2638"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f6b93b" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#d2475a"/>
+  <circle cx="200" cy="200" r="118" fill="#fdf1e6" stroke="#f6b93b" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">KINDNESS AGENT</textPath></text>
+    <text font-size="19" fill="#f6b93b" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CHARACTER</textPath></text>
+  </g>
+  <g fill="#f6b93b">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#f6b93b">
+    <path d="M132,112 Q132,128 148,128 Q132,128 132,144 Q132,128 116,128 Q132,128 132,112 Z"/>
+    <path d="M276,118 Q276,130 288,130 Q276,130 276,142 Q276,130 264,130 Q276,130 276,118 Z"/>
+    <path d="M286,250 Q286,259 295,259 Q286,259 286,268 Q286,259 277,259 Q286,259 286,250 Z"/>
+  </g>
+
+  <!-- Heart agent -->
+  <path d="M200,284 C118,226 104,170 136,146 C162,127 191,138 200,164 C209,138 238,127 264,146 C296,170 282,226 200,284 Z"
+        fill="#d2475a" stroke="#8e2638" stroke-width="5" stroke-linejoin="round"/>
+  <ellipse cx="148" cy="166" rx="10" ry="16" transform="rotate(35 148 166)" fill="#ffffff" opacity="0.55"/>
+  <!-- Sunglasses -->
+  <g fill="#1f2328">
+    <rect x="148" y="184" width="44" height="24" rx="10"/>
+    <rect x="208" y="184" width="44" height="24" rx="10"/>
+    <rect x="188" y="188" width="24" height="6" rx="3"/>
+  </g>
+  <rect x="156" y="189" width="12" height="5" rx="2.5" fill="#ffffff" opacity="0.6"/>
+  <rect x="216" y="189" width="12" height="5" rx="2.5" fill="#ffffff" opacity="0.6"/>
+  <!-- Smile -->
+  <path d="M176,226 Q200,246 224,226" fill="none" stroke="#1f2328" stroke-width="6" stroke-linecap="round"/>
+</svg>

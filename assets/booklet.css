@@ -1,0 +1,343 @@
+/* CoreXP badge booklet — shared styles.
+   Each booklet sets its own colors with --main, --dark, --accent and --tint.
+   Pages are half-letter (5.5in x 8.5in) so two fit on one letter sheet. */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --main: #2e6b4f;
+  --dark: #1c4534;
+  --accent: #e3a92b;
+  --tint: #eaf3ee;
+  --ink: #1f2328;
+  --muted: #6b7280;
+  --rule: #c3cad2;
+  --line: 0.32in;
+  --display: 'Fredoka', 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif;
+}
+
+@page {
+  size: 5.5in 8.5in;
+  margin: 0.45in 0.45in 0.5in;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.35;
+  color: var(--ink);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.1;
+}
+
+p { margin: 0 0 8px; }
+
+/* ---------- Pages ---------- */
+
+.sheet { break-before: page; }
+.sheet:first-child { break-before: auto; }
+
+@media screen {
+  body { background: #e7e3da; padding: 24px 12px; }
+  .sheet {
+    width: 5.5in;
+    max-width: 100%;
+    min-height: 8.5in;
+    margin: 0 auto 24px;
+    padding: 0.45in;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  .print-tip {
+    max-width: 5.5in;
+    margin: 0 auto 16px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fffbe8;
+    border: 1px solid #ecd77a;
+    font-size: 10pt;
+  }
+}
+
+@media print {
+  .print-tip { display: none; }
+}
+
+/* ---------- Cover ---------- */
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 7.5in;
+}
+.cover .brand {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 9pt;
+  color: var(--main);
+}
+.cover .logo { width: 3.1in; margin: 0.25in 0 0.2in; }
+.cover h1 { font-size: 30pt; }
+.cover .tagline { font-style: italic; color: var(--muted); margin: 6px 0 0; font-size: 11pt; }
+.cover .owner { width: 100%; margin-top: auto; text-align: left; }
+.cover .category {
+  margin-top: 14px;
+  font-size: 8pt;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- Section headings ---------- */
+
+.page-title { font-size: 17pt; margin-bottom: 8px; }
+.page-title small {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--main);
+  margin-bottom: 2px;
+}
+
+.level-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--main);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+.level-head .stars { font-size: 15pt; color: var(--accent); letter-spacing: 1px; white-space: nowrap; }
+.level-head h2 { color: #fff; font-size: 18pt; }
+.level-head .level-num {
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.level-head .level-desc { font-size: 8.5pt; opacity: 0.9; }
+
+/* ---------- Requirement cards ---------- */
+
+.req {
+  border: 1.5px solid var(--rule);
+  border-radius: 10px;
+  padding: 10px 12px 8px;
+  margin-bottom: 12px;
+  break-inside: avoid;
+}
+.req.tall { break-inside: auto; }
+
+.req-head { display: flex; gap: 9px; align-items: flex-start; margin-bottom: 8px; }
+.req-num {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--main);
+  color: #fff;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 11pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.req-title { font-weight: 700; font-size: 10.5pt; line-height: 1.25; padding-top: 2px; }
+.req-title .hint { display: block; font-weight: 400; font-size: 8.5pt; color: var(--muted); margin-top: 2px; }
+
+.label {
+  display: block;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main);
+  margin: 8px 0 1px;
+}
+.label:first-child { margin-top: 0; }
+
+.req-foot {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 6px;
+  border-top: 1px dotted var(--rule);
+  font-size: 8pt;
+  color: var(--muted);
+}
+.req-foot .blank { min-width: 0.8in; }
+
+/* ---------- Writing space ---------- */
+
+.lines {
+  height: calc(var(--n, 3) * var(--line));
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--line) - 1px),
+    var(--rule) calc(var(--line) - 1px),
+    var(--rule) var(--line)
+  );
+}
+
+.field { display: flex; align-items: flex-end; gap: 6px; margin-top: 7px; }
+.field > span:first-child { white-space: nowrap; font-weight: 600; font-size: 9pt; }
+.blank { flex: 1; border-bottom: 1px solid var(--ink); height: 1.15em; }
+
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.cols.three { grid-template-columns: 1fr 1fr 1fr; }
+
+.box {
+  height: var(--h, 1.5in);
+  border: 1.5px dashed var(--rule);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--rule);
+  font-size: 8.5pt;
+  font-style: italic;
+  margin: 4px 0;
+}
+
+.check { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; font-size: 9pt; }
+.check::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 1.3px solid var(--ink);
+  border-radius: 2px;
+  flex: none;
+}
+.checks { margin-top: 6px; line-height: 1.8; }
+
+/* ---------- Trackers ---------- */
+
+table.tracker { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 8pt; }
+table.tracker th, table.tracker td { border: 1px solid var(--rule); padding: 3px 4px; text-align: center; }
+table.tracker thead th { background: var(--tint); color: var(--dark); font-weight: 700; }
+table.tracker tbody th { text-align: left; white-space: nowrap; font-weight: 600; width: 1%; }
+table.tracker td { height: 0.28in; }
+table.tracker.log td { text-align: left; height: 0.42in; }
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 1fr);
+  gap: 4px;
+  margin-top: 4px;
+}
+.days span {
+  aspect-ratio: 1;
+  border: 1.3px solid var(--rule);
+  border-radius: 6px;
+  font-size: 7pt;
+  color: var(--muted);
+  padding: 2px 3px;
+}
+
+.entry { border-left: 3px solid var(--accent); padding: 2px 0 2px 9px; margin-top: 9px; break-inside: avoid; }
+.entry .field { margin-top: 0; }
+
+/* ---------- Progress & sign-off ---------- */
+
+.why { background: var(--tint); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; }
+.why p:last-child { margin-bottom: 0; }
+
+.how li { margin-bottom: 4px; }
+.how { padding-left: 18px; margin: 4px 0 14px; }
+
+.progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.progress .col { border: 1.5px solid var(--rule); border-radius: 10px; padding: 8px; text-align: center; }
+.progress h3 { font-size: 11pt; }
+.progress .dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; margin-top: 7px; }
+.progress .dots span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--main);
+  color: var(--main);
+  font-family: var(--display);
+  font-size: 9pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level-done {
+  border: 2px solid var(--accent);
+  background: var(--tint);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-top: 4px;
+  break-inside: avoid;
+}
+.level-done h3 { font-size: 12pt; }
+.level-done p { font-size: 8.5pt; color: var(--muted); margin: 2px 0 0; }
+
+.certificate {
+  border: 3px double var(--main);
+  border-radius: 14px;
+  padding: 0.3in 0.3in 0.25in;
+  text-align: center;
+  min-height: 7.45in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificate .brand {
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 9pt;
+  color: var(--main);
+}
+.certificate .logo { width: 1.9in; margin: 6px 0 10px; }
+.certificate .tagline { font-style: italic; color: var(--muted); margin: 6px 0 0; }
+.certificate h1 { font-size: 22pt; }
+.certificate .field, .certificate .label { text-align: left; width: 100%; }
+.certificate .lines { width: 100%; }
+
+/* ---------- Badge themes ---------- */
+
+.stamp {
+  display: inline-block;
+  border: 2px solid var(--main);
+  color: var(--main);
+  border-radius: 4px;
+  padding: 0 6px;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 7.5pt;
+  letter-spacing: 0.15em;
+  transform: rotate(-3deg);
+  margin-left: 4px;
+  vertical-align: 1px;
+}

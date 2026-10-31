@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pathfinder badge">
+  <defs>
+    <path id="arc-top" d="M 67,200 A 133,133 0 0 1 333,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#1c4534"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#e3a92b" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2e6b4f"/>
+  <circle cx="200" cy="200" r="118" fill="#f4ebd6" stroke="#e3a92b" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="4"><textPath href="#arc-top" startOffset="50%">PATHFINDER</textPath></text>
+    <text font-size="19" fill="#e3a92b" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CHARACTER</textPath></text>
+  </g>
+  <g fill="#e3a92b">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Compass -->
+  <circle cx="200" cy="200" r="92" fill="none" stroke="#2e6b4f" stroke-width="3"/>
+  <g stroke="#2e6b4f" stroke-width="3" stroke-linecap="round">
+    <line x1="200" y1="100" x2="200" y2="110"/>
+    <line x1="300" y1="200" x2="290" y2="200"/>
+    <line x1="200" y1="300" x2="200" y2="290"/>
+    <line x1="100" y1="200" x2="110" y2="200"/>
+  </g>
+  <polygon points="156,156 200,182 244,156 218,200 244,244 200,218 156,244 182,200" fill="#e3a92b"/>
+  <polygon points="200,112 214,186 288,200 214,214 200,288 186,214 112,200 186,186" fill="#2e6b4f"/>
+  <g fill="#1c4534">
+    <polygon points="288,200 200,200 214,186"/>
+    <polygon points="200,288 200,200 214,214"/>
+    <polygon points="112,200 200,200 186,214"/>
+  </g>
+  <polygon points="200,112 214,186 200,200" fill="#c8432b"/>
+  <polygon points="200,112 186,186 200,200" fill="#e0614a"/>
+  <circle cx="200" cy="200" r="9" fill="#f4ebd6" stroke="#1c4534" stroke-width="3"/>
+</svg>

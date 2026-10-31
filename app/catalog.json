@@ -1,0 +1,4154 @@
+{
+ "categories": [
+  {
+   "num": 1,
+   "name": "Character & Spirituality",
+   "color": "#2b4c7e",
+   "badges": [
+    {
+     "id": "kindness-agent",
+     "title": "Kindness Agent",
+     "tagline": "Learning to serve and uplift others with love.",
+     "color": "#d2475a",
+     "required": true,
+     "logo": "logos/kindness-agent.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 22,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Do at least 5 acts of kindness in one week.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Make and give a handwritten note or drawing.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Describe a kind act you witnessed.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Make a 'Kindness Jar' with ideas for future acts.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plan a way to brighten someone’s day.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Serve someone without being asked and don’t tell them.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Identify and plan a way to help someone who may feel left out.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Read or watch a story about compassion and share your thoughts.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a small kindness challenge and invite others.",
+         "xp": 10
+        },
+        {
+         "n": "6",
+         "text": "Write a thank-you letter to someone who's helped you.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 55,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plan and complete a 2-hour kindness project.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Interview someone who serves others and reflect on it.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Lead a kindness week challenge with younger kids.",
+         "xp": 20
+        },
+        {
+         "n": "4",
+         "text": "Reflect on what you learned about yourself through service.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Log 25 acts of kindness.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Do a secret act of kindness for every person in your family without getting caught.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Organize a service day for your neighborhood or ward that involves at least 10 people.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "pathfinder",
+     "title": "Pathfinder",
+     "tagline": "Exploring and living by your values.",
+     "color": "#2e6b4f",
+     "required": true,
+     "logo": "logos/pathfinder.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Identify 3 core personal or family values.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Write or tell someone why each value is important to you.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Share a time when you saw someone live one of those values.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Memorize a quote or scripture that represents one of your chosen values.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Keep a 7-day journal reflecting on how you lived your values.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Identify a time you were tempted to go against a value. What did you do?",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Interview a parent or mentor about their values.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Discuss values shown or violated in a movie or story.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a symbol, art, or written expression of a value.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Choose one core value and live it deeply for 30 days.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Lead a discussion or presentation about values.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Reflect on a decision or relationship shaped by your values.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Apply a value to a real-world issue and explain your response.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Memorize 5 quotes or scriptures, one for each of 5 different values.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Write a personal code (your top values and what they mean to you) and display it in your room.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Live by your personal code for 90 days, with a check-in with your mentor every week.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "spiritual-seeker-lds-focus",
+     "title": "Spiritual Seeker (LDS Focus)",
+     "tagline": "Growing in your relationship with Heavenly Father, Jesus Christ, and the Holy Ghost.",
+     "color": "#2b4c7e",
+     "required": true,
+     "logo": "logos/spiritual-seeker-lds-focus.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 20,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Pray morning and night for 3 days in a row.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Read scriptures with family or alone for 3 days.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Memorize and recite one Article of Faith.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Attend sacrament meeting and share something you learned or felt.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Study a scripture hero and share what you admire.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Keep a spiritual journal for 7 days.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Choose a Christlike attribute and work on it for a week.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Memorize three Articles of Faith and explain them.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Watch or listen to a General Conference talk and discuss it.",
+         "xp": 5
+        },
+        {
+         "n": "6",
+         "text": "Complete one family history task (add photo/story or interview elder).",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 60,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create and follow a 30-day spiritual habit plan.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Give a talk or testimony in a family or church setting.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create a gospel study project on a chosen topic.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Attend the temple or prepare family names with a parent.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Lead or plan a family home evening lesson.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Memorize all 13 Articles of Faith.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Find and prepare the names of 5 ancestors for temple ordinances, or index 200 FamilySearch records.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Read the entire Book of Mormon.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "name": "Health & Physical Wellness",
+   "color": "#c8403a",
+   "badges": [
+    {
+     "id": "clean-capable",
+     "title": "Clean & Capable",
+     "tagline": "Learn to take care of your hygiene, grooming, and personal environment so you stay clean, healthy, and confident.",
+     "color": "#3a9ad9",
+     "required": true,
+     "logo": "logos/clean-capable.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 17,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Brush your teeth and floss daily for 5 days in a row.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn and demonstrate proper handwashing.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Practice showering or bathing regularly (at least 3 times/week).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Keep your bedroom clean for 3 days in a row.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 34,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a morning and evening hygiene routine and follow it for 7 days.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Learn how to properly clip fingernails and toenails.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Sort, wash, and put away your own laundry at least twice.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Keep your bedroom clean and organized for 7 days.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Talk with a parent about body changes and hygiene needs as you grow.",
+         "xp": 2
+        },
+        {
+         "n": "6",
+         "text": "Help clean a shared space in your home (bathroom, kitchen, etc.).",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 60,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Follow your hygiene routine consistently for 30 days.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach a sibling or friend how to care for their hygiene or space.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Research and explain how hygiene affects self-confidence and health.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Create a hygiene checklist for yourself or others to use.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Keep your room and one shared space clean and organized for 2 weeks.",
+         "xp": 20
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Do your own laundry start to finish (wash, dry, fold, put away) for 4 weeks in a row.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Brush twice a day and floss daily for 60 days in a row.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Keep your room ready for a surprise inspection for 90 days, passing at least 10 random checks.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "first-aid-hero",
+     "title": "First Aid Hero",
+     "tagline": "Learn how to stay calm, act wisely, and help others in basic health emergencies.",
+     "color": "#c8403a",
+     "required": true,
+     "logo": "logos/first-aid-hero.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn how and when to call 911 (and practice saying your full name/address).",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Identify items in a basic first aid kit and what they’re used for.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Watch or read about how to help with minor cuts, scrapes, and burns.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Roleplay helping someone who is hurt or sick at home or on the playground.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn and demonstrate how to clean and bandage a wound.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn what to do for nosebleeds, burns, and insect bites.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Practice how to stay calm and help someone having a minor emergency.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Understand the basics of when not to move someone who is injured.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Create or help update your family’s first aid kit.",
+         "xp": 5
+        },
+        {
+         "n": "6",
+         "text": "Learn signs of concussion, dehydration, or heat exhaustion.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Teach a younger sibling or friend three basic first aid tips.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Create a first aid cheat sheet or poster and share it with your family or group.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Roleplay responding to a scenario (e.g., fall, bee sting, head bump) and walk through what to do.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn how to help someone who is choking and explain the steps out loud or in a skit.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Earn a CPR certification through a class (in-person or online), or attend a parent-approved youth CPR training.",
+         "xp": 20
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Build a portable first aid kit for a backpack or car and explain every item in it.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Pass a month of surprise drills: your mentor stages 5 unannounced pretend emergencies and you respond correctly to all of them.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Complete a Red Cross Babysitter's Training, Wilderness First Aid, or full First Aid/CPR/AED course.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "fit-force",
+     "title": "Fit Force",
+     "tagline": "Develop strength, endurance, and confidence through consistent physical activity.",
+     "color": "#e07a1f",
+     "required": true,
+     "logo": "logos/fit-force.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Try 3 different types of movement (e.g., running, dancing, yoga, hiking).",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Do 10–15 minutes of physical activity for 5 days in one week.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn and demonstrate a simple warm-up and cool-down.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about why exercise is good for your heart, lungs, and muscles.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 52,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Set and track a fitness goal for 2 weeks (e.g., number of steps, active minutes).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Learn and perform a basic strength circuit (e.g., squats, push-ups, planks).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Try a new sport or activity you haven’t done before.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn how to monitor your heart rate during exercise and what it means.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Keep a log of your physical activity for 7 days and reflect on how you felt.",
+         "xp": 10
+        },
+        {
+         "n": "6",
+         "text": "Teach a family member or friend a short fitness routine.",
+         "xp": 10
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Set a 30-day fitness challenge and complete it (with accountability).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Research and present how fitness helps prevent long-term health problems.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create and lead a group workout (siblings, family, or friends).",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Learn and explain basic injury prevention and recovery techniques (stretching, hydration, rest).",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect in writing or video: What have you learned about your body and your mindset through this badge?",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Do 3 pull-ups.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Hold a plank for 2 minutes.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Run a 5K.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "fuel-master",
+     "title": "Fuel Master",
+     "tagline": "Understand how food, hydration, and nutrition affect your energy, mood, and health.",
+     "color": "#5a9e3a",
+     "required": true,
+     "logo": "logos/fuel-master.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Identify the 5 basic food groups and give an example of each.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Keep a food log for 2 days—write or draw what you eat and drink.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn why water is important and track your hydration for one day.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Help prepare a healthy snack for yourself or your family.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 31,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn to read a nutrition label and compare two similar foods.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Plan and help prepare a healthy breakfast, lunch, and dinner.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Set a goal to eat at least 3 fruits or vegetables per day for 7 days.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Learn about sugar and how to spot hidden sugars in foods.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Talk with a parent about balanced meals and portion sizes.",
+         "xp": 2
+        },
+        {
+         "n": "6",
+         "text": "Replace a common snack with a healthier option for 5 days.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a 1-week meal plan that includes all food groups and healthy snacks.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach someone younger than you about making healthy food choices.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Research and explain how nutrition affects your energy, sleep, or mood.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Try cooking or baking a new healthy recipe from scratch.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect in writing or video: What have you learned about your eating habits and how food affects you?",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Cook 3 full meals from scratch.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Drink no soda or sugary drinks for 30 days.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Plan, budget, shop for, and cook the family's dinners for a full week.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "rest-recharge",
+     "title": "Rest & Recharge",
+     "tagline": "Learn how rest, sleep, and downtime help your body and mind stay strong, focused, and happy.",
+     "color": "#4b4a9c",
+     "required": false,
+     "logo": "logos/rest-recharge.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a bedtime routine and follow it for 3 nights in a row.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn and discuss why sleep is important for your brain and body.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Track your sleep for 3 days (what time you go to bed and wake up).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Try a calm-down activity before bed (e.g., reading, quiet music, stretching).",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 24,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Keep a consistent bedtime and wake-up time for 5 days in a row.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Go one full day without screens 30 minutes before bed.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Learn how caffeine, sugar, and screens can affect sleep.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Design a sleep-friendly bedroom environment (cool, dark, quiet).",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Practice two different relaxation techniques (e.g., breathing, journaling, stretching).",
+         "xp": 5
+        },
+        {
+         "n": "6",
+         "text": "Track your energy and mood over 5 days and reflect on how rest impacts them.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Follow your customized rest plan for 14 days (bedtime, calming habits, screen limits).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach a sibling or friend how to build a healthy sleep routine.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Research and share how rest affects focus, memory, and health.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Write or record a reflection: What helps you feel rested? What gets in the way?",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Choose a day to completely unplug and rest (no screens except for emergencies). Share what you did instead.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Have screen-free evenings (no screens after dinner) for 7 days in a row.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Get to bed within 15 minutes of your bedtime for 30 nights in a row.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Keep all devices out of your bedroom overnight for 90 days.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "name": "Emotional & Mental Resilience",
+   "color": "#7b4ba8",
+   "badges": [
+    {
+     "id": "bounce-back",
+     "title": "Bounce Back",
+     "tagline": "Build resilience and grit when things go wrong.",
+     "color": "#e8664a",
+     "required": true,
+     "logo": "logos/bounce-back.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Name a time something was hard but you kept trying.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Learn what 'resilience' means and why it’s important.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Draw or describe something that helped you feel better after disappointment.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about someone you admire who is resilient and what they did.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 19,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write about a time you made a mistake and recovered from it.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn and explain the difference between problem-solving and giving up.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Try a difficult task 3 times and track your progress.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Practice asking for help in a real situation.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Create a resilience checklist with strategies that help you bounce back.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Set a meaningful goal that challenges you and work on it for 30 days.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Reflect on 3 personal setbacks and what you learned from them.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Interview someone about a time they bounced back from something hard.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Help a friend or sibling through a difficult situation with empathy.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a short presentation, poster, or video about bouncing back from failure.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Try out, audition, or compete in something you're afraid of failing at, then write about how it went.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Learn a skill that takes lots of failed attempts (juggling 3 balls, solving a Rubik's cube, a skateboard trick) and log every attempt until you get it.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Go back to a goal you once failed at and achieve it.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "calm-commander",
+     "title": "Calm Commander",
+     "tagline": "Build emotional awareness and regulation skills.",
+     "color": "#2f8f8b",
+     "required": true,
+     "logo": "logos/calm-commander.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Name at least 5 different emotions and describe what they feel like.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Draw or color what anger, sadness, or excitement feels like in your body.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Practice a calm-down strategy (like deep breathing) 3 times.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Describe a time you calmed yourself down after feeling upset.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 22,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Track your moods for 5 days and write what may have caused them.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Try at least 3 different calming strategies and reflect on which works best.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Create a calm-down corner or toolkit (at home or in a box/bag).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about how your emotions can affect others and what to do about it.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Practice using calming strategies during a real challenge or argument.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Practice emotion regulation strategies for 14 days and reflect in a journal.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach someone else about how to handle strong emotions in healthy ways.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create a guide, video, or comic showing how to calm down in tough moments.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Learn and explain how the brain and nervous system react to stress.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Identify a real recurring trigger and make a plan to handle it better next time.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Go 7 days without yelling, slamming, or name-calling (you track it, and your family confirms it).",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Use your calm-down toolkit successfully 10 times and log each one.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Go 30 days handling every blow-up moment with your strategies (a family vote confirms it).",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "mind-master",
+     "title": "Mind Master",
+     "tagline": "Learn how your brain works and how to build a growth mindset.",
+     "color": "#7b4ba8",
+     "required": false,
+     "logo": "logos/mind-master.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn the difference between a growth mindset and a fixed mindset.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Write down one thing you used to be bad at but got better at with practice.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Set a small goal and work on it for 3 days.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about what happens in your brain when you try something hard.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 24,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a poster or journal page showing growth mindset phrases.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Track your effort toward a goal for 7 days and reflect on your progress.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Learn how to break a big goal into smaller steps.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Practice saying kind things to yourself when you make mistakes.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Explain how your brain grows stronger through challenge and learning.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Set and complete a meaningful 30-day personal growth challenge.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach someone younger than you about growth mindset and goal-setting.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Write or present a story of a time you failed, kept trying, and grew stronger.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Create a visual or video to explain the power of mindset and perseverance.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how your thinking has changed since starting this badge.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Read a biography of someone who failed many times before succeeding, and share 3 lessons from it.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Learn a brand-new skill in 30 days and show it off in a side-by-side video of Day 1 and Day 30.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Complete a 100-day challenge: practice something every day for 100 days in a row.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "self-reflector",
+     "title": "Self-Reflector",
+     "tagline": "Learn to check in with yourself and express your thoughts and emotions.",
+     "color": "#c25b7a",
+     "required": true,
+     "logo": "logos/self-reflector.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write or draw how you're feeling once per day for 3 days.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Share one thing that made you feel proud recently.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Make a list of 5 things you're grateful for.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about a time you were confused or unsure and what you did.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 32,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Keep a reflection journal for 7 days with short entries about your day.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Try 3 different reflection tools (journaling, talking, art, prayer).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Write about a mistake and what you learned from it.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Practice a gratitude habit (e.g., 3 things each night) for a week.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Identify a personal strength and give an example of how you used it.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 47,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Keep a reflection journal or audio diary for 21 days.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Create a project (poster, essay, video) about your personal growth journey.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Share a meaningful insight from your journal with a trusted adult.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Guide someone else through a reflection activity.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how regular self-reflection has changed your thoughts or behavior.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Write a letter to your future self, seal it, and set a date to open it one year from now.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Fill an entire journal, cover to cover.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Keep a journal for a full year, with at least 3 entries every week.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "stillness-scout",
+     "title": "Stillness Scout",
+     "tagline": "Practice mindfulness, breathing, and being present.",
+     "color": "#6e9c7f",
+     "required": false,
+     "logo": "logos/stillness-scout.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Try a 2-minute guided breathing exercise 3 times.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Sit quietly and notice 5 things you can see, hear, or feel.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Draw a picture of a peaceful place or moment.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Notice how your body feels before and after a calming break.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 25,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Practice mindfulness for 5 minutes a day for 5 days.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn and try 3 types of mindfulness (breathing, body scan, mindful eating).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Take a 20-minute walk and observe your surroundings silently.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Reflect on how mindfulness helped you in a stressful moment.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a short mindfulness routine for mornings or evenings.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 55,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Complete a 14-day mindfulness challenge (5+ min/day).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach or guide someone else through a mindfulness exercise.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Learn and explain how mindfulness affects the brain and body.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Keep a log of what you notice during mindfulness over 2 weeks.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Create a mindfulness guide or video for other kids or family members.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Spend 10 quiet minutes outside at sunrise or sunset for 7 days in a row.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Meditate or sit in mindful silence for 20 minutes in one sitting.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Keep a 100-day mindfulness streak (at least 5 minutes a day).",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "name": "Relationships & Social Skills",
+   "color": "#3b7dd8",
+   "badges": [
+    {
+     "id": "empathy-friendship",
+     "title": "Empathy & Friendship",
+     "tagline": "Understand how others feel and respond with kindness and connection.",
+     "color": "#b8467e",
+     "required": true,
+     "logo": "logos/empathy-friendship.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Name at least 4 different feelings someone else might have.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Do 3 kind things for friends or family and don't tell them you did it.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Listen to someone talk about their day and ask 2 follow-up questions.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Draw or describe what a good friend does and how they make others feel.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Interview someone about a time they felt misunderstood and what helped.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Make a plan to include someone who might feel left out (at school, church, or family).",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Notice how someone else is feeling and try to help or support them.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Keep a kindness log for 5 days and reflect on how it felt to serve others.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Read a story or watch a video about empathy and share what you learned.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Be a mentor or 'buddy' to someone younger or newer in a group.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Write or create something about a time someone showed you empathy.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Plan and complete a small service project to support a friend or family member.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Teach a sibling or friend about what empathy means and how to show it.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how empathy has made a difference in your relationships.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Write notes of appreciation to 10 different people.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Make a new friend and spend time with them at least 5 times.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Be a steady buddy to a new kid, a neighbor, or someone who's lonely for 3 months.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "good-communicator",
+     "title": "Good Communicator",
+     "tagline": "Learn to speak clearly, listen actively, and express yourself kindly.",
+     "color": "#3b7dd8",
+     "required": true,
+     "logo": "logos/good-communicator.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Practice active listening in 3 conversations (look, nod, don't interrupt).",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Say something kind or encouraging to 3 people.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Tell a short story or explain something you know to a family member.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Learn about body language and name 3 things people can show without words.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 24,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write or say how you feel using 'I' statements in a real situation.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Practice giving and receiving feedback respectfully.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Prepare and give a short talk, story, or presentation to your family or group.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Roleplay introducing yourself or making small talk with someone new.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Learn how tone and facial expressions change the meaning of your words.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Lead or co-lead a group conversation or discussion (family, group, class).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Write or record a reflection on what makes a great communicator.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Teach someone how to use 'I' statements or active listening.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Keep a log of 3 difficult conversations and what you learned from each.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Research a famous communicator and share what made them effective.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Make a phone call to a business on your own to ask a question or place an order.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Give a 5-minute talk or speech without reading from notes.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Compete in a speech, debate, or public-speaking event, or give a talk in front of a congregation or large group.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "team-conflict-skills",
+     "title": "Team & Conflict Skills",
+     "tagline": "Work with others, cooperate in groups, and solve conflicts peacefully.",
+     "color": "#c9772b",
+     "required": true,
+     "logo": "logos/team-conflict-skills.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Join a group activity and take turns or share responsibilities.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Practice saying, 'Let’s work together' or 'What do you think?' in a group.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Talk about what makes someone a good teammate.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Describe a time when you disagreed with someone and how it got worked out.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Practice using calm words and listening during a disagreement.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Roleplay solving a conflict using steps: listen, share, find a solution.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Join or lead a group project where everyone contributes something.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Talk about how being bossy or passive affects a group—and how to find balance.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Reflect on a real disagreement and write or talk about what you could do better next time.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Lead a team activity and help the group stay respectful and fair.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach someone else about how to solve a conflict with words, not anger.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Keep a journal for 10 days tracking your teamwork or leadership experiences.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Research and present a peacemaking technique (like compromise or mediation).",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Create a guide or poster showing the steps for resolving conflict kindly.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Help two siblings or friends settle an argument in a way both of them agree is fair.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Lead a team to finish a big challenge (an escape room, a building contest, a group service project).",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Complete a full season with a team, club, crew, or group, showing up and doing your part the whole way.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "name": "Practical Life Skills",
+   "color": "#2f8f4e",
+   "badges": [
+    {
+     "id": "fix-it-scout",
+     "title": "Fix-It Scout",
+     "tagline": "Learn basic repair, maintenance, and problem-solving skills around the home.",
+     "color": "#56718a",
+     "required": false,
+     "logo": "logos/fix-it-scout.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Name 5 tools and what they’re used for.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Help fix or tighten something simple with an adult (screw, battery, etc.).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Check and replace batteries in a flashlight or remote.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Learn how to properly use a flashlight, tape measure, or broom.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 22,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn how to safely hammer a nail or turn a screwdriver.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Help patch, touch up, or repair something broken at home.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Make a mini tool kit or drawer with home repair supplies.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn how to check for burned-out light bulbs and replace them.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Create a checklist of items to inspect and maintain monthly (batteries, filters, lights).",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 37,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Independently complete 3 small fix-it tasks around the house.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach someone else how to safely use basic tools.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Learn about safety gear and when to use it (gloves, goggles, etc.).",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Help plan or do a family home improvement project.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Write or share what you’ve learned about fixing and maintaining things.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Fix a flat bike tire on your own.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Build a working project from plans (a birdhouse, shelf, or toolbox).",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Build a big project from scratch with a parent, like a bench, a raised garden bed, or a piece of furniture.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "home-helper",
+     "title": "Home Helper",
+     "tagline": "Learn to cook, clean, and help run your home.",
+     "color": "#b5523b",
+     "required": true,
+     "logo": "logos/home-helper.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Help prepare or clean up after 3 family meals.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Sweep or vacuum a shared space in your home.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Make your bed and tidy your room for 3 days in a row.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn how to wash dishes by hand or load/unload a dishwasher.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Follow a simple recipe to make a meal or snack mostly on your own.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Clean a bathroom (sink, toilet, mirror) with help if needed.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Take responsibility for one chore for a full week.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Set the table and serve a meal for your family.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Sort and take out the trash and recycling.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plan and cook a full meal for your family (with help if needed).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Deep-clean your room, including vacuuming, organizing, and dusting.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Make a chore chart or home helper routine for yourself or siblings.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Teach a younger sibling or friend how to do a chore you’ve mastered.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect or share what you’ve learned about working together at home.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Do all of the family's dishes for 7 days in a row.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Plan and cook a family dinner once a week for a month.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Run the household for a full day (meals, cleaning, and schedule) with parents only assisting.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "money-smart",
+     "title": "Money Smart",
+     "tagline": "Understand the basics of earning, saving, spending, and giving.",
+     "color": "#2f8f4e",
+     "required": true,
+     "logo": "logos/money-smart.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Identify 3 ways people earn money.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Sort coins and bills and name their values.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Save money in a piggy bank or envelope for 2 weeks.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about something you bought or want and how you could earn for it.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 25,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create 3 spending categories: save, spend, and give.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Do a small job to earn money and record what you earned.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Plan a budget for a $10–$20 project or goal.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn what tithing is (or giving) and give from your own money.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Visit a store and compare prices or read product labels with a parent.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Track your money for 30 days: what you earned, spent, saved, and gave.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Plan and make a larger purchase using saved money.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Teach someone how to use the save/spend/give method.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Research and explain how banks or digital money tools work.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect on a financial decision you made—what went well or what you’d change.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Save $50 toward a goal.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Open a savings account and make 5 deposits.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Build a small business and earn $100 in profit.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "personal-manager",
+     "title": "Personal Manager",
+     "tagline": "Take responsibility for your schedule, belongings, and personal tasks.",
+     "color": "#4a6fa5",
+     "required": true,
+     "logo": "logos/personal-manager.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Pack your own bag for a day out (church, school, trip, etc.).",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Choose and lay out your clothes for 3 mornings.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Put away your clean laundry 3 times.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Make a simple to-do list and check off 3 tasks.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Keep track of your schedule or appointments for a week.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Organize a drawer, backpack, or closet space and keep it tidy for 7 days.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create a personal checklist or routine for your morning or evening.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Track your own screen time or media use for 3 days and reflect on it.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Set and complete 3 personal goals (small and doable).",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 65,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Independently manage your morning or evening routine for 14 days.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Create a weekly planner or task board and use it for 2 weeks.",
+         "xp": 20
+        },
+        {
+         "n": "3",
+         "text": "Teach a sibling how to organize or manage something they struggle with.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Plan and complete a full “reset day” where you catch up and clean up your space.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how managing your time and things affects how you feel.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Pack yourself for an overnight trip with no reminders, and don't forget anything.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Wake up with your own alarm and get ready with no reminders for 30 days in a row.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Manage your own calendar for a whole summer or semester without missing a commitment.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "safety-scout",
+     "title": "Safety Scout",
+     "tagline": "Be prepared for emergencies and learn how to keep yourself and others safe.",
+     "color": "#d99a00",
+     "required": true,
+     "logo": "logos/safety-scout.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn and recite your full name, address, and a parent’s phone number.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Identify and draw a fire escape route from your home.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Practice how to stop, drop, and roll and what to do in a fire.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about what to do if you get lost in a store or public place.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 19,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Build or check a family emergency kit with an adult.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn about safe street crossing and bike rules.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Create a personal safety plan (who to call, where to go, etc.).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Practice what to say if a stranger approaches or asks for help.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Help test smoke alarms or check home safety items with an adult.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a family emergency binder or plan (contacts, meeting place, etc.).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach siblings or friends one safety routine you’ve learned.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Roleplay 3 different emergency scenarios and your response.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Learn how to shut off water or power to your home (with supervision).",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how being prepared helps you feel confident and calm.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Plan and lead a timed family fire drill, then improve the time on a second drill.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Ride your bike to a destination using every hand signal and road rule while an adult follows.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Pass a swim safety test: tread water for 2 minutes and swim 100 yards without stopping.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "name": "Creativity & Innovation",
+   "color": "#1f8a9e",
+   "badges": [
+    {
+     "id": "creative-maker",
+     "title": "Creative Maker",
+     "tagline": "Express yourself through art, crafts, design, or building projects.",
+     "color": "#1f8a9e",
+     "required": false,
+     "logo": "logos/creative-maker.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 17,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Make something creative using paper, crayons, or markers.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Try a craft or DIY project with a parent or sibling.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Visit an art museum (in person or virtual) and talk about what you liked.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Describe or draw your idea for a fun invention or product.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 32,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a finished art or design project using at least 3 materials.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Learn about and try a new type of visual art (e.g., clay, collage, paint).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Enter a project in a fair, show, or display it at home.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Teach a younger child how to do a creative project.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Write or talk about what inspires your creativity.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 47,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Complete a multi-day creative project (e.g., sculpture, diorama, design).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Create a collection or portfolio of your work (digital or physical).",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Design something useful or beautiful for your home or family.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Learn and explain one element or principle of design (e.g., balance, color).",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how your creativity has grown and changed.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Do 30 sketches in 30 days.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Sell or give away 5 of your handmade creations.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Host an art show of at least 10 of your pieces for family and friends.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "digital-creator",
+     "title": "Digital Creator",
+     "tagline": "Make something using digital tools like slideshows, stop-motion, or coding.",
+     "color": "#2d3a4a",
+     "required": false,
+     "logo": "logos/digital-creator.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 20,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a fun slideshow or poster using a computer or tablet.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Make a short animation or video using a basic app.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Try a beginner activity on a kid-friendly coding site (e.g., Scratch).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Draw a picture or comic using a digital drawing tool.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 29,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a full project using a digital tool (e.g., game, video, art, website).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Share a digital creation with your family or group.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Learn about digital design principles (contrast, balance, layout).",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Add music, text, or effects to a digital story or video.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Try solving a real-world problem with a digital solution (e.g., organizer, reminder, tracker).",
+         "xp": 10
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 42,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plan and complete a digital portfolio, website, or collection of projects.",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach a digital skill to someone else.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Submit a project to a contest, showcase, or online platform.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Write or talk about what you've learned using digital tools to express yourself.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how you use technology creatively and responsibly.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Make a 3-minute edited video with music and titles.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Build and share a game in Scratch (or another tool) that at least 5 people play.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Build a working website or app that solves a real problem for your family.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "idea-builder",
+     "title": "Idea Builder",
+     "tagline": "Learn to brainstorm, prototype, and improve creative or practical ideas.",
+     "color": "#2d6ca3",
+     "required": false,
+     "logo": "logos/idea-builder.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 17,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Draw or describe an invention or improvement on something you use.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Build something using blocks, Legos, or household materials.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Brainstorm 5 ideas to solve a problem in your home or school.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Try combining two objects or ideas to create something new.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 32,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create a working prototype of an idea using simple materials.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Ask someone to test your design and give feedback.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Improve something you've already made and explain why you changed it.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Research an inventor and share what made them successful.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Try using a design process (plan, build, test, improve).",
+         "xp": 10
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 65,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Complete an innovation project from start to finish (plan to presentation).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach others how to brainstorm or prototype.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Join a maker space, robotics, or design event (or create your own).",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Keep a design journal or sketchbook for 2 weeks.",
+         "xp": 20
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how failure or feedback helped you build a better idea.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Take apart an old device (with permission) and explain how it works.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Enter an invention fair, science fair, or robotics competition.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Build an invention your family actually uses every week.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "music-explorer",
+     "title": "Music Explorer",
+     "tagline": "Explore rhythm, sound, instruments, or voice as creative expression.",
+     "color": "#5b4bb7",
+     "required": false,
+     "logo": "logos/music-explorer.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Listen to 3 songs from different styles or cultures and share what you notice.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Try keeping a beat with your hands or a homemade drum.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Sing or play along with a favorite song.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Make a simple instrument (like a shaker or rubber band guitar).",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn and perform a short song (voice or instrument).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Experiment with writing your own rhythm, melody, or lyrics.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn about a musical instrument and how it's played.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Play or sing music with someone else.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a playlist for a specific mood or event and explain your choices.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 99,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Complete a creative music project (recording, composition, performance).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach a musical skill to a sibling or friend.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Learn basic music vocabulary (tempo, pitch, rhythm, dynamics).",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Attend a live or virtual music event and reflect on what you experienced.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Share how music helps you express emotions or connect with others.",
+         "xp": 2
+        },
+        {
+         "n": "6",
+         "text": "Practice a musical instrument 5 days per week for 12 weeks",
+         "xp": 40
+        },
+        {
+         "n": "7",
+         "text": "Memorize a song on a musical instrument and perform it at a recital or a family event",
+         "xp": 20
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Learn 5 songs well enough to play or sing them by heart.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Perform in a public recital, concert, or church meeting.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Write and record an original song with at least two parts (like melody and accompaniment).",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "storyteller",
+     "title": "Storyteller",
+     "tagline": "Use words, pictures, or video to tell original stories or share experiences.",
+     "color": "#8c3b4a",
+     "required": false,
+     "logo": "logos/storyteller.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Tell a made-up story out loud or through pictures.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Draw or write a short story with a beginning, middle, and end.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Record yourself telling a joke or true story and share it.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Make a list of your favorite books, shows, or storytellers.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 34,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write or illustrate a complete short story or comic.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Share a true story from your life with a parent or group.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Create a short skit or puppet show and perform it.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Try storytelling with a new medium (e.g., stop-motion, audio, slideshow).",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Give constructive feedback on someone else's story or performance.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Create and present a longer storytelling project (e.g., book, video, zine).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Enter a story into a contest or publish it (even just for your family).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Teach someone how to build a story with characters and plot.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Write about what you’ve learned from telling or hearing stories.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how storytelling helps you connect with others.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Write 7 short stories in 7 days.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Read 10 books in one season.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Write and bind (or publish) a book of at least 20 pages.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "name": "Nature & Citizenship",
+   "color": "#b5652f",
+   "badges": [
+    {
+     "id": "animal-ally",
+     "title": "Animal Ally",
+     "tagline": "Learn about animal care, kindness to creatures, and respecting wildlife.",
+     "color": "#8b5a3c",
+     "required": false,
+     "logo": "logos/animal-ally.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Help feed, groom, or clean up after a pet.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Visit or learn about a wild animal at a zoo or sanctuary.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Make a bird feeder or bug habitat and observe it.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about why it’s important to be gentle with animals.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 32,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn about a local animal rescue or shelter and what they do.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Create a care guide or checklist for a pet or animal you know.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Keep a log of how you care for a pet or animal for 1 week.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Make a donation or volunteer with an adult at an animal-related group.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Research how to safely observe wild animals in your area.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 50,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Teach others about responsible pet ownership or wildlife safety.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Create a video, poster, or story about an animal you care about.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Design an awareness or fundraising effort for animals in need.",
+         "xp": 20
+        },
+        {
+         "n": "4",
+         "text": "Interview someone who works with animals and share what you learned.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how your actions can help animals and ecosystems.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Take full responsibility for a pet's care for 2 weeks with no reminders.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Teach a pet 3 new commands or tricks.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Volunteer 20 hours with an animal organization, or raise an animal through 4-H or a similar program.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "civic-explorer-local",
+     "title": "Civic Explorer – Local",
+     "tagline": "Learn how your community works and what it means to be a good citizen.",
+     "color": "#3e6fa8",
+     "required": true,
+     "logo": "logos/civic-explorer-local.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn about the roles of the mayor, police, or other local officials.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Talk about what it means to be a good citizen at home or school.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Visit a public building (library, city hall, fire station) or take a virtual tour.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Say the Pledge of Allegiance and talk about what it means.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Watch a city council meeting or learn about local laws.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Write a letter or thank-you note to a public official or community helper.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Interview a civic leader or someone involved in the community.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Create a poster or slideshow about how kids can make a difference.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Talk about a problem in your town or school and brainstorm solutions.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Participate in a civic activity (e.g., service day, fundraiser, awareness event).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach others what it means to be a responsible citizen.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Write or present your idea for improving your community.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Learn about voting and simulate an election or decision-making process.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how you can be a lifelong community contributor.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Attend a city council or school board meeting in person.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Speak during public comment at a city or school board meeting.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Propose a real improvement to your neighborhood or city and see it through with a local leader.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "civic-explorer-national",
+     "title": "Civic Explorer – National",
+     "tagline": "Understand how the U.S. government works and what it means to be a responsible American citizen.",
+     "color": "#1f3a68",
+     "required": true,
+     "logo": "logos/civic-explorer-national.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 8,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn the three branches of the U.S. government and what each one does.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Name the current President and one member of Congress from your state.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Recite or learn about a line from the Preamble to the Constitution.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about what it means to be a good citizen of the United States.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 30,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Track a national issue or current event and talk about it with your family.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Create a poster or slideshow about one U.S. symbol (e.g., flag, eagle, monument).",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Simulate an election by researching candidates and voting as a family.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Watch a portion of a Congressional hearing or speech and summarize it.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Learn about a national hero or civil rights leader and their impact.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 35,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write to a U.S. senator or representative about a national issue that matters to you.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Teach someone younger about the Constitution or Bill of Rights.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create a civics quiz, video, or activity for your family or group.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Reflect on how your voice matters in a democracy and what you want to stand for.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Learn about a landmark U.S. Supreme Court case and explain its significance.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Memorize the Preamble to the Constitution.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Visit a national park, monument, or historic site and present what you learned.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Pass the U.S. citizenship civics test (study all 100 questions, then get 6 out of 10 right on a practice test).",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "civic-explorer-state",
+     "title": "Civic Explorer – State",
+     "tagline": "Learn how your state government works and what it means to be an active resident.",
+     "color": "#6a4c93",
+     "required": true,
+     "logo": "logos/civic-explorer-state.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn the name of your state, capital city, and governor.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Find your state on a U.S. map and draw its shape or flag.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Identify one thing your state is known for (e.g., food, landmark, history).",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about what your state government does that affects your life.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn how a state law is made and write or draw a simple version of the process.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Visit (in person or online) a state park, museum, or capitol building.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Create a short report, poster, or video about your state’s history or symbols.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Identify your state senator or representative and what they do.",
+         "xp": 2
+        },
+        {
+         "n": "5",
+         "text": "Track a current event happening in your state and discuss it with your family.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Write a letter to a state official about a topic that matters to you.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Teach someone about how state government is different from local or national.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Simulate a state bill and vote with family or friends on whether it should pass.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Reflect on how being involved in your state helps make it a better place.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Create a slideshow or video about how you can serve your state.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Memorize your state's capital, governor, both U.S. senators, motto, and nickname.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Visit your state capitol building in person.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Visit 5 state parks or historic sites and make a travel guide about them.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "civic-explorer-world",
+     "title": "Civic Explorer – World",
+     "tagline": "Learn about other countries, cultures, and how people work together around the world.",
+     "color": "#2a8c82",
+     "required": true,
+     "logo": "logos/civic-explorer-world.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 11,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Find 3 countries on a world map and learn one fun fact about each.",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Try a food, song, or tradition from a culture different than your own.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn about one global holiday or celebration and how it's celebrated.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Talk about what it means to be respectful of different cultures and languages.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 22,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Learn about a major world issue (e.g., clean water, education, hunger) and how people are helping.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Create a poster, slideshow, or journal page comparing life in two different countries.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Write or draw about a world leader or changemaker you admire.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Watch a documentary or video about a different country and discuss what you learned.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Practice greeting someone in three different languages.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Participate in a global service project (e.g., donation, letter-writing, clean water campaign).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Teach others something meaningful about another country or culture.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Create a global citizenship pledge or guide for your family or group.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Reflect on what you've learned about how people around the world are both different and alike.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Simulate a United Nations meeting or group discussion to solve a world issue.",
+         "xp": 10
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Learn to count to 20 and introduce yourself in another language.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Have a real conversation (pen pal, video call, or in person) with someone who lives in another country.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Keep a 100-day streak learning a new language.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "community-helper",
+     "title": "Community Helper",
+     "tagline": "Serve your neighborhood or community through small acts that make a difference.",
+     "color": "#2e7f9e",
+     "required": true,
+     "logo": "logos/community-helper.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Do something kind for a neighbor (e.g., letter, help with yard, say hello).",
+         "xp": 2
+        },
+        {
+         "n": "2",
+         "text": "Help with a community or church clean-up project.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn about someone in your community who serves others.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Draw or write about a problem in your community and how you might help.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 40,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Collect and donate items for a cause (food, toys, books, etc.).",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Volunteer your time with a parent for at least 1 hour.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Plan and complete a service project with your family or group.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Write a thank-you note to someone who helps your community.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Talk with a local leader or community member about what they do.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 55,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Lead or organize a service project or campaign (with guidance).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Keep a service journal and reflect on 5 things you’ve done to help others.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Teach or involve others in a community improvement effort.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Research a local need and present an idea to help.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how helping others has helped you grow.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Volunteer 10 hours of service.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Volunteer 25 hours of service.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Volunteer 50 hours of service in one year.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "earth-steward",
+     "title": "Earth Steward",
+     "tagline": "Care for nature and learn about your local environment.",
+     "color": "#3f8e4a",
+     "required": false,
+     "logo": "logos/earth-steward.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 17,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Pick up litter in a park or neighborhood with an adult.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Learn about recycling and sort items into trash, recycle, and compost.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Draw or write about your favorite place in nature and why you love it.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Watch a nature documentary or video and share something you learned.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plant something and care for it for at least 2 weeks.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Learn about and reduce one source of waste in your home.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Take a nature walk and identify at least 5 different plants or animals.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Make a sign or project encouraging others to help protect the Earth.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Talk about how water, air, or land pollution affects your community.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 55,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Complete a 30-day eco-challenge (e.g., no single-use plastics, composting, or energy saving).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach someone else about a way to protect the environment.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Participate in a community clean-up or nature conservation project.",
+         "xp": 10
+        },
+        {
+         "n": "4",
+         "text": "Keep a nature journal with 7 entries from different days or places.",
+         "xp": 10
+        },
+        {
+         "n": "5",
+         "text": "Reflect on how your actions impact the Earth and what you're doing to help.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Pick up 100 pieces of litter.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Grow a fruit or vegetable from seed and eat it.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Start a garden or compost pile and keep it going for a full season.",
+       "xp": 40
+      }
+     ]
+    },
+    {
+     "id": "outdoor-adventurer",
+     "title": "Outdoor Adventurer",
+     "tagline": "Build confidence and skills in the outdoors—hiking, camping, survival basics.",
+     "color": "#b5652f",
+     "required": false,
+     "logo": "logos/outdoor-adventurer.svg",
+     "levels": [
+      {
+       "name": "Explorer",
+       "xp": 14,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Go on a nature walk or hike and observe your surroundings.",
+         "xp": 5
+        },
+        {
+         "n": "2",
+         "text": "Pack a day bag with essentials for an outdoor adventure.",
+         "xp": 2
+        },
+        {
+         "n": "3",
+         "text": "Learn and practice basic navigation (compass or trail map).",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Talk about what to do if you get lost in the woods or outside.",
+         "xp": 2
+        }
+       ]
+      },
+      {
+       "name": "Builder",
+       "xp": 27,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Help plan and go on a longer hike or outdoor trip.",
+         "xp": 10
+        },
+        {
+         "n": "2",
+         "text": "Build a basic shelter, knot, or survival tool using natural materials.",
+         "xp": 5
+        },
+        {
+         "n": "3",
+         "text": "Learn how to layer clothing for outdoor conditions.",
+         "xp": 2
+        },
+        {
+         "n": "4",
+         "text": "Practice outdoor cooking or build a safe pretend campfire.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Keep a 5-day log of time spent outdoors and what you did each day.",
+         "xp": 5
+        }
+       ]
+      },
+      {
+       "name": "Master",
+       "xp": 45,
+       "reqs": [
+        {
+         "n": "1",
+         "text": "Plan and complete an outdoor activity that requires preparation and safety (hike, campout, or nature challenge).",
+         "xp": 20
+        },
+        {
+         "n": "2",
+         "text": "Teach an outdoor skill (navigation, fire safety, knot tying) to someone else.",
+         "xp": 10
+        },
+        {
+         "n": "3",
+         "text": "Identify 10 plants or animals native to your region.",
+         "xp": 5
+        },
+        {
+         "n": "4",
+         "text": "Create a poster, video, or guide for first-time hikers or campers.",
+         "xp": 5
+        },
+        {
+         "n": "5",
+         "text": "Reflect on what you’ve learned about being prepared and respectful outdoors.",
+         "xp": 5
+        }
+       ]
+      }
+     ],
+     "epics": [
+      {
+       "stars": "★",
+       "tier": "Challenger",
+       "text": "Hike 5 miles in one day.",
+       "xp": 15
+      },
+      {
+       "stars": "★★",
+       "tier": "Champion",
+       "text": "Go on an overnight camping trip and help set up and break down camp.",
+       "xp": 25
+      },
+      {
+       "stars": "★★★",
+       "tier": "Legend",
+       "text": "Complete a 10-mile hike or a 3-day camping trip.",
+       "xp": 40
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "top": {
+  "name": "Winged Lion Award",
+  "tagline": "The highest award in CoreXP, named for our family mascot: lead a service project that leaves something better than you found it.",
+  "reqs": [
+   {
+    "n": "1",
+    "text": "Find a real need in your community, church, or school, and choose a project that meets it. Talk with the person or group it will help."
+   },
+   {
+    "n": "2",
+    "text": "Write a project proposal: the need, what you'll do, materials and costs, how you'll get them, who will help, a timeline, and how you'll keep everyone safe."
+   },
+   {
+    "n": "3",
+    "text": "Get the proposal approved by your parents, a mentor from outside the family, and the person or group the project will help."
+   },
+   {
+    "n": "4",
+    "text": "Raise or gather the materials and money you need yourself, without your parents paying for them."
+   },
+   {
+    "n": "5",
+    "text": "Recruit and lead a team of at least 3 helpers. You plan the work and give directions; you don't do it all alone."
+   },
+   {
+    "n": "6",
+    "text": "Carry out the project, with at least 40 hours of total work (your hours plus your helpers')."
+   },
+   {
+    "n": "7",
+    "text": "Keep a project log of each work session: the date, who helped, the hours, and what got done."
+   },
+   {
+    "n": "8",
+    "text": "Write a final report with photos: what went well, what changed from the plan, and what you learned about leading."
+   },
+   {
+    "n": "9",
+    "text": "Thank everyone who helped, in person or in writing."
+   },
+   {
+    "n": "10",
+    "text": "Meet with a Winged Lion review panel (your parents and your outside mentor) to present the project and talk about your CoreXP journey and what's next."
+   }
+  ]
+ },
+ "epicsPerPatch": 3,
+ "patch": {
+  "electives": 6,
+  "minFrom": {
+   "cat": 6,
+   "n": 2
+  }
+ }
+}

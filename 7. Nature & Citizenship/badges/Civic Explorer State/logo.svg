@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Civic Explorer State badge">
+  <defs>
+    <path id="arc-top" d="M 65.4,200 A 134.6,134.6 0 0 1 334.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#3a2754"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#6a4c93"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f2ee" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29.0" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">CIVIC EXPLORER</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · STATE</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <line x1="200" y1="120" x2="200" y2="100" stroke="#3a2754" stroke-width="4"/>
+  <polygon points="200,100 224,106 200,113" fill="#6a4c93"/>
+  <rect x="192" y="120" width="16" height="18" fill="#ffffff" stroke="#3a2754" stroke-width="4"/>
+  <path d="M150,186 A50,50 0 0,1 250,186 Z" fill="#f2c14e" stroke="#3a2754" stroke-width="5"/>
+  <rect x="146" y="186" width="108" height="30" fill="#ffffff" stroke="#3a2754" stroke-width="5"/>
+  <g stroke="#3a2754" stroke-width="4"><line x1="164" y1="192" x2="164" y2="210"/><line x1="182" y1="192" x2="182" y2="210"/><line x1="200" y1="192" x2="200" y2="210"/><line x1="218" y1="192" x2="218" y2="210"/><line x1="236" y1="192" x2="236" y2="210"/></g>
+  <rect x="116" y="216" width="168" height="40" fill="#ffffff" stroke="#3a2754" stroke-width="5"/>
+  <g stroke="#3a2754" stroke-width="5"><line x1="134" y1="224" x2="134" y2="250"/><line x1="151" y1="224" x2="151" y2="250"/><line x1="168" y1="224" x2="168" y2="250"/><line x1="185" y1="224" x2="185" y2="250"/><line x1="202" y1="224" x2="202" y2="250"/><line x1="219" y1="224" x2="219" y2="250"/><line x1="236" y1="224" x2="236" y2="250"/><line x1="253" y1="224" x2="253" y2="250"/></g>
+  <rect x="112" y="254" width="176" height="11" rx="2" fill="#3a2754"/>
+</svg>

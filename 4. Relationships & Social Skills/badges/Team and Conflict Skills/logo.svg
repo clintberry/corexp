@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Team and Conflict Skills badge">
+  <defs>
+    <path id="arc-top" d="M 64.9,200 A 135.1,135.1 0 0 1 335.1,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#6f3f12"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f7dc7a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#c9772b"/>
+  <circle cx="200" cy="200" r="118" fill="#fcf4e9" stroke="#f7dc7a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="27.6" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">TEAM &amp; CONFLICT</textPath></text>
+    <text font-size="19" fill="#f7dc7a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · SOCIAL</textPath></text>
+  </g>
+  <g fill="#f7dc7a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g fill="#c9772b" stroke="#6f3f12" stroke-width="5">
+    <circle cx="146" cy="168" r="18"/><path d="M116,256 V222 Q116,194 146,194 Q176,194 176,222 V256 Z"/>
+    <circle cx="254" cy="168" r="18"/><path d="M224,256 V222 Q224,194 254,194 Q284,194 284,222 V256 Z"/>
+  </g>
+  <g fill="#f7dc7a" stroke="#6f3f12" stroke-width="5">
+    <circle cx="200" cy="148" r="22"/><path d="M160,266 V222 Q160,180 200,180 Q240,180 240,222 V266 Z"/>
+  </g>
+  <path d="M184,222 L196,234 L218,208" fill="none" stroke="#6f3f12" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

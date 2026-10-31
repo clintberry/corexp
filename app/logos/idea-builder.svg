@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Idea Builder badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#173e63"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f6c04d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2d6ca3"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f3ef" stroke="#f6c04d" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">IDEA BUILDER</textPath></text>
+    <text font-size="19" fill="#f6c04d" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CREATIVITY</textPath></text>
+  </g>
+  <g fill="#f6c04d">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g stroke="#f6c04d" stroke-width="8" stroke-linecap="round">
+    <line x1="200" y1="108" x2="200" y2="92"/><line x1="236" y1="119" x2="245" y2="106"/><line x1="164" y1="119" x2="155" y2="106"/>
+    <line x1="258" y1="149" x2="273" y2="143"/><line x1="142" y1="149" x2="127" y2="143"/>
+  </g>
+  <path d="M200,118 C232,118 254,142 254,172 C254,194 240,206 230,216 C224,222 222,228 222,234 H178 C178,228 176,222 170,216 C160,206 146,194 146,172 C146,142 168,118 200,118 Z" fill="#f6c04d" stroke="#173e63" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M186,212 V196 L178,176 M214,212 V196 L222,176 M178,176 L190,186 L200,174 L210,186 L222,176" fill="none" stroke="#173e63" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#9aa6b2" stroke="#173e63" stroke-width="4">
+    <rect x="178" y="234" width="44" height="12" rx="4"/><rect x="180" y="246" width="40" height="12" rx="4"/>
+  </g>
+  <path d="M188,258 H212 Q210,272 200,272 Q190,272 188,258 Z" fill="#173e63"/>
+</svg>

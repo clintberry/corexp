@@ -1,0 +1,526 @@
+<title>CoreXP Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+  /* Layout: a family home of kid cards and an award queue; each kid gets a badge wall by category; a badge opens a checklist sheet. */
+  :root {
+    --paper: #f6efe1; --card: #fffaf1; --ink: #1b2a3a; --muted: #5e6a75; --line: #e2d6bf; --well: #efe5d2;
+    --red: #c1272d; --bronze: #a8592a; --silver: #6f8693; --gold: #b98714; --ok: #2f7d4f;
+    --display: "Fredoka", "Arial Rounded MT Bold", system-ui, sans-serif;
+    --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --shadow: 0 1px 0 rgba(27,42,58,.06), 0 6px 18px -10px rgba(27,42,58,.35);
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --paper: #101922; --card: #182431; --ink: #f1e8d6; --muted: #a2afba; --line: #2a3a4a; --well: #1f2d3b;
+    --red: #e4555a; --bronze: #d38a55; --silver: #a6bac6; --gold: #e2b545; --ok: #5cb983;
+    --shadow: 0 1px 0 rgba(0,0,0,.3), 0 8px 20px -12px rgba(0,0,0,.8); color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --paper: #101922; --card: #182431; --ink: #f1e8d6; --muted: #a2afba; --line: #2a3a4a; --well: #1f2d3b;
+    --red: #e4555a; --bronze: #d38a55; --silver: #a6bac6; --gold: #e2b545; --ok: #5cb983;
+    --shadow: 0 1px 0 rgba(0,0,0,.3), 0 8px 20px -12px rgba(0,0,0,.8); color-scheme: dark }
+
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-block: 18px 60px;
+          padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; text-wrap: balance; line-height: 1.15; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 6px; }
+  .num { font-variant-numeric: tabular-nums; }
+  .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+
+  /* Header */
+  header.top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-bottom: 22px; }
+  .brand { display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: inherit; }
+  .brand b { font-family: var(--display); font-size: 30px; font-weight: 700; letter-spacing: .5px; }
+  .brand b span { color: var(--red); }
+  .brand em { font-style: normal; font-family: var(--display); color: var(--muted); font-size: 17px; }
+  nav.kids { display: flex; gap: 8px; overflow-x: auto; padding: 2px; min-width: 0; flex: 1; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--line); background: var(--card); border-radius: 999px;
+          padding: 5px 14px 5px 5px; cursor: pointer; white-space: nowrap; text-decoration: none; color: inherit; font-weight: 700; }
+  .chip.plain { padding: 6px 14px; }
+  .chip[aria-current="page"] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+  .avatar { width: 28px; height: 28px; border-radius: 50%; background: var(--kc); color: #fff; display: grid; place-items: center;
+            font-family: var(--display); font-weight: 600; font-size: 15px; flex: none; }
+  .avatar.lg { width: 54px; height: 54px; font-size: 26px; }
+
+  /* Panels */
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 28px 0 12px; }
+  .section-head h2 { font-size: 22px; }
+  .muted { color: var(--muted); }
+  .notice { background: var(--well); border-radius: 10px; padding: 10px 14px; color: var(--muted); font-size: 14px; }
+
+  /* Family */
+  .kid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .kid-card { text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 12px; border-top: 5px solid var(--kc); }
+  .kid-card:hover { transform: translateY(-1px); }
+  .kid-card .row { display: flex; align-items: center; gap: 12px; }
+  .kid-card h3 { font-size: 22px; }
+  .xp-big { font-family: var(--display); font-size: 30px; font-weight: 700; line-height: 1; }
+  .xp-big small { font-size: 14px; color: var(--muted); font-weight: 500; margin-left: 3px; }
+
+  .meters { display: grid; gap: 6px; }
+  .meter { display: grid; grid-template-columns: 70px 1fr 44px; align-items: center; gap: 8px; font-size: 13px; }
+  .meter .bar { height: 8px; border-radius: 99px; background: var(--well); overflow: hidden; }
+  .meter .bar i { display: block; height: 100%; background: var(--mc); border-radius: 99px; }
+  .meter b { text-align: right; font-weight: 700; }
+
+  /* Award queue */
+  .queue { display: grid; gap: 8px; }
+  .q-item { display: grid; grid-template-columns: 44px 1fr auto; gap: 12px; align-items: center; padding: 8px 10px; border-radius: 10px; background: var(--well); }
+  .q-item img { width: 44px; height: 44px; object-fit: contain; }
+  .q-item img[src$=".jpg"] { object-fit: cover; object-position: 50% 75%; border-radius: 6px; }
+  .q-item .what { min-width: 0; }
+  .q-item .what b { display: block; }
+  .q-item .what span { font-size: 13px; color: var(--muted); }
+  .q-actions { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .btn { border: 1.5px solid var(--ink); background: var(--ink); color: var(--paper); border-radius: 8px; padding: 6px 12px; font-weight: 700; cursor: pointer; font-size: 13px; }
+  .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn.danger { background: var(--red); border-color: var(--red); color: #fff; }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .kind { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; margin-right: 6px; color: #fff; background: var(--mc); vertical-align: 1px; }
+
+  /* Kid page */
+  .kid-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; border-top: 6px solid var(--kc); }
+  .kid-hero .who { display: flex; align-items: center; gap: 14px; }
+  .kid-hero h1 { font-size: 32px; }
+  .stats { display: flex; gap: 22px; flex-wrap: wrap; }
+  .stat .v { font-family: var(--display); font-size: 26px; font-weight: 700; line-height: 1.1; }
+  .stat .k { font-size: 12px; color: var(--muted); }
+  .levels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+  .lvl-tile { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center; }
+  .lvl-tile img { width: 64px; height: 64px; filter: grayscale(1) opacity(.45); transition: filter .3s; }
+  .lvl-tile.won img { filter: none; }
+  .lvl-tile h3 { font-size: 17px; }
+  .lvl-tile .bar { height: 8px; border-radius: 99px; background: var(--well); overflow: hidden; margin: 5px 0 3px; }
+  .lvl-tile .bar i { display: block; height: 100%; background: var(--mc); }
+  .lvl-tile small { color: var(--muted); font-size: 12.5px; }
+
+  .cat { margin-top: 26px; }
+  .cat-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .cat-head .n { width: 26px; height: 26px; border-radius: 6px; background: var(--cc); color: #fff; display: grid; place-items: center; font-family: var(--display); font-weight: 600; }
+  .cat-head h2 { font-size: 19px; }
+  .cat-head .muted { font-size: 13px; margin-left: auto; }
+  .badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .badge { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 10px 10px; text-align: center; cursor: pointer;
+           display: flex; flex-direction: column; align-items: center; gap: 6px; box-shadow: var(--shadow); }
+  .badge:hover { border-color: var(--bc); }
+  .badge img { width: 92px; height: 92px; transition: filter .3s; }
+  .badge[data-lv="0"] img { filter: grayscale(1) opacity(.5); }
+  .badge[data-lv="1"] img { filter: grayscale(1) sepia(.6) brightness(1.05); }
+  .badge[data-lv="2"] img { filter: saturate(.5); }
+  .badge .t { font-weight: 700; font-size: 14px; line-height: 1.2; }
+  .badge .x { font-size: 12px; color: var(--muted); }
+  .badge .elective { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; }
+  .pips { display: flex; gap: 5px; }
+  .pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--mc); box-sizing: border-box; background: transparent; }
+  .pip.part { background: linear-gradient(90deg, var(--mc) 50%, transparent 50%); }
+  .pip.done { background: var(--mc); }
+  .flag { font-size: 11px; font-weight: 700; color: var(--red); }
+
+  /* Badge sheet */
+  dialog { border: 0; padding: 0; background: var(--card); color: var(--ink); border-radius: 16px; width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); box-shadow: 0 30px 80px -20px rgba(0,0,0,.6); }
+  dialog::backdrop { background: rgba(16,25,34,.55); }
+  .sheet-head { display: grid; grid-template-columns: 96px minmax(0,1fr) auto; gap: 16px; align-items: center; padding: 18px 20px; border-bottom: 1px solid var(--line); background: var(--well); position: sticky; top: 0; z-index: 1; }
+  .sheet-head img { width: 96px; height: 96px; }
+  .sheet-head h2 { font-size: 26px; }
+  .sheet-head p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .close { border: 0; background: transparent; font-size: 28px; line-height: 1; cursor: pointer; color: var(--muted); padding: 4px 8px; align-self: start; }
+  .sheet-body { padding: 6px 20px 22px; }
+  .lv { margin-top: 18px; }
+  .lv-head { display: flex; align-items: center; gap: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--mc); }
+  .lv-head h3 { font-size: 18px; color: var(--mc); }
+  .lv-head .num { margin-left: auto; font-size: 13px; color: var(--muted); }
+  .req { display: grid; grid-template-columns: 26px minmax(0,1fr) auto; gap: 10px; align-items: start; padding: 9px 2px; border-bottom: 1px dashed var(--line); cursor: pointer; }
+  .req input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--mc); cursor: pointer; }
+  .req.done .txt { color: var(--muted); }
+  .req .meta { text-align: right; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .req .meta b { display: block; color: var(--ink); font-size: 13px; }
+  .awards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; margin-top: 10px; }
+  .award { border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .award .st { font-size: 12.5px; color: var(--muted); }
+  .award.ready { border-color: var(--mc); }
+  .award.given .st { color: var(--ok); font-weight: 700; }
+
+  form.add { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  form.add input[type=text] { flex: 1; min-width: 0; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--paper); color: var(--ink); font: inherit; }
+  .swatches { display: flex; gap: 6px; }
+  .swatches label { width: 26px; height: 26px; border-radius: 50%; background: var(--kc); cursor: pointer; display: block; position: relative; }
+  .swatches input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .swatches label:has(input:checked) { box-shadow: 0 0 0 3px var(--card), 0 0 0 5px var(--ink); }
+  .empty { text-align: center; padding: 34px 18px; }
+  .empty img { width: 120px; }
+  .danger-zone { margin-top: 30px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+  .epic-dots { display: flex; align-items: center; gap: 4px; margin-top: 4px; font-size: 11px; }
+  .epic-dots span { color: var(--line); letter-spacing: -1px; }
+  .epic-dots span.on { color: var(--mc); }
+  .epic-dots small { margin-left: 4px; }
+  .top-award { margin-top: 14px; border: 2px solid var(--gold); background: linear-gradient(135deg, var(--card), var(--well)); }
+  .top-award summary { display: grid; grid-template-columns: 84px minmax(0,1fr) auto; gap: 14px; align-items: center; cursor: pointer; list-style: none; }
+  .top-award summary::-webkit-details-marker { display: none; }
+  .top-award h2 { font-size: 24px; }
+  .top-award p { margin: 2px 0 0; font-size: 14px; }
+  .summit { width: 84px; height: 112px; object-fit: cover; border-radius: 8px; filter: grayscale(1) opacity(.5); transition: filter .3s; }
+  .summit.won, .top-award[open] .summit.won { filter: none; }
+  .top-status { font-weight: 700; font-size: 13px; color: var(--gold); text-align: right; }
+  .prereq { margin: 14px 0 4px; padding: 8px 12px; border-radius: 8px; background: var(--well); font-size: 14px; color: var(--muted); }
+  .prereq.met { color: var(--ok); }
+  @media (max-width: 640px) { .top-award summary { grid-template-columns: 60px minmax(0,1fr); } .summit { width: 60px; height: 80px; } .top-status { grid-column: 1 / -1; text-align: left; } }
+  @media (max-width: 640px) {
+    .kid-hero { grid-template-columns: 1fr; }
+    .levels { grid-template-columns: 1fr; }
+    .sheet-head { grid-template-columns: 64px minmax(0,1fr) auto; padding: 14px; }
+    .sheet-head img { width: 64px; height: 64px; }
+    .sheet-head h2 { font-size: 21px; }
+    .sheet-body { padding: 4px 14px 18px; }
+    .q-item { grid-template-columns: 38px 1fr; }
+    .q-item img { width: 38px; height: 38px; }
+    .q-actions { grid-column: 1 / -1; justify-content: flex-start; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#family"><b>Core<span>XP</span></b><em>Tracker</em></a>
+    <nav class="kids" id="nav" aria-label="Adventurers"></nav>
+  </header>
+  <main id="main"><div class="panel empty"><p class="muted">Loading the badge catalog…</p></div></main>
+</div>
+<dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+
+<script>
+const METALS = [
+  { name: "Explorer", tier: "Challenger", stars: "★", css: "var(--bronze)", img: "logos/level-explorer.svg" },
+  { name: "Builder", tier: "Champion", stars: "★★", css: "var(--silver)", img: "logos/level-builder.svg" },
+  { name: "Master", tier: "Legend", stars: "★★★", css: "var(--gold)", img: "logos/level-master.svg" },
+];
+const KID_COLORS = ["#c1272d", "#1f8a9e", "#7b4ba8", "#d17a22", "#2f8f4e", "#2b4c7e"];
+
+const S = { cat: null, badges: [], kids: [], progress: {}, db: null, canWrite: false, dbState: "loading", open: null, confirmDelete: false };
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+const fmtDate = s => s ? new Date(s + "T12:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }) : "";
+
+// ---------- Progress math ----------
+const rk = (b, i, r) => `${b.id}~${i}-${r.n}`;
+const ek = (b, j) => `${b.id}~e${j}`;
+const P = kid => S.progress[kid] || { reqs: {}, awards: {} };
+const levelCount = (p, b, i) => b.levels[i].reqs.filter(r => p.reqs?.[rk(b, i, r)]).length;
+const levelDone = (p, b, i) => levelCount(p, b, i) === b.levels[i].reqs.length;
+const levelsDone = (p, b) => [0, 1, 2].filter(i => levelDone(p, b, i)).length;
+function badgeXP(p, b) {
+  let x = 0;
+  b.levels.forEach((lv, i) => lv.reqs.forEach(r => { if (p.reqs?.[rk(b, i, r)]) x += r.xp; }));
+  b.epics.forEach((e, j) => { if (p.reqs?.[ek(b, j)]) x += e.xp; });
+  return x;
+}
+const badgeMax = b => b.levels.reduce((s, l) => s + l.xp, 0) + b.epics.reduce((s, e) => s + e.xp, 0);
+const kidXP = kid => S.badges.reduce((s, b) => s + badgeXP(P(kid), b), 0);
+const award = (kid, key) => P(kid).awards?.[key] || null;
+const epicsNeeded = () => S.cat.epicsPerPatch || 3;
+const tierEpics = (kid, i) => S.badges.reduce((s, b) => s + b.epics.filter((e, j) => e.tier === METALS[i].tier && P(kid).reqs?.[ek(b, j)]).length, 0);
+// Level patch: every required badge at level i, plus electives (some from one category).
+function patchProgress(kid, i) {
+  const { electives, minFrom } = S.cat.patch, p = P(kid);
+  const done = S.badges.filter(b => levelDone(p, b, i));
+  const req = done.filter(b => b.required).length;
+  const fromCat = Math.min(done.filter(b => !b.required && b.cat === minFrom.cat).length, electives);
+  const other = done.filter(b => !b.required && b.cat !== minFrom.cat).length;
+  const elec = fromCat + Math.min(other, electives - Math.max(minFrom.n, fromCat));
+  const reqTotal = S.badges.filter(b => b.required).length;
+  return { req, reqTotal, elec, electives, n: req + elec, total: reqTotal + electives };
+}
+const levelPatchEarned = (kid, i) => { const g = patchProgress(kid, i); return g.n === g.total && tierEpics(kid, i) >= epicsNeeded(); };
+const tk = r => `top~${r.n}`;
+const topCount = kid => S.cat.top.reqs.filter(r => P(kid).reqs?.[tk(r)]).length;
+const topEarned = kid => levelPatchEarned(kid, 2) && topCount(kid) === S.cat.top.reqs.length;
+
+// Physical awards earned but not yet in hand.
+function queueFor(kid) {
+  const p = P(kid), out = [];
+  [0, 1, 2].forEach(i => {
+    if (levelPatchEarned(kid, i) && award(kid, `level~${i}`)?.status !== "given")
+      out.push({ kid, key: `level~${i}`, kind: "Level patch", metal: i, img: METALS[i].img, title: `${METALS[i].name} patch`, sub: `Required badges + ${S.cat.patch.electives} electives at ${METALS[i].name} + ${epicsNeeded()} ${METALS[i].tier} quests`, patch: true });
+  });
+  if (topEarned(kid) && award(kid, "top")?.status !== "given")
+    out.unshift({ kid, key: "top", kind: "Medal", metal: 2, img: "logos/winged-lion-medal.jpg", title: S.cat.top.name, sub: "Service project complete", patch: true });
+  for (const b of S.badges) {
+    const done = levelsDone(p, b);
+    if (done === 3 && award(kid, `${b.id}~patch`)?.status !== "given")
+      out.push({ kid, key: `${b.id}~patch`, kind: "Patch", metal: 2, img: b.logo, title: `${b.title} patch`, sub: "All three levels done", patch: true, badge: b.id });
+    [0, 1, 2].forEach(i => {
+      if (levelDone(p, b, i) && award(kid, `${b.id}~btn${i}`)?.status !== "given")
+        out.push({ kid, key: `${b.id}~btn${i}`, kind: "Button", metal: i, img: b.logo, title: `${b.title} · ${METALS[i].name}`, sub: `${METALS[i].name} button`, badge: b.id });
+    });
+  }
+  return out;
+}
+
+// ---------- Writes: one at a time per document ----------
+const chains = {};
+function writeProgress(kid, patch) {
+  const cur = P(kid);
+  const merged = { reqs: { ...cur.reqs, ...(patch.reqs || {}) }, awards: { ...cur.awards, ...(patch.awards || {}) } };
+  S.progress[kid] = merged;
+  render();
+  const ref = S.db.doc(`progress/${kid}`);
+  const exists = !!S.progressExists[kid];
+  chains[kid] = (chains[kid] || Promise.resolve()).then(() => (exists ? ref.update(patch) : ref.set(merged)))
+    .then(() => { S.progressExists[kid] = true; })
+    .catch(e => toast(e?.code === "invalid_argument" ? "You can view this tracker but not change it." : "Couldn't save that change. Check your connection and try again."));
+}
+S.progressExists = {};
+
+function toggleReq(kid, key, on) { writeProgress(kid, { reqs: { [key]: on ? today() : null } }); }
+function setAward(kid, key, status) { writeProgress(kid, { awards: { [key]: status ? { status, date: today() } : null } }); }
+
+// ---------- Rendering ----------
+const kidById = id => S.kids.find(k => k.id === id);
+const route = () => { const h = location.hash.slice(1); return h.startsWith("kid-") ? { kid: h.slice(4) } : { family: true }; };
+
+function renderNav() {
+  const r = route();
+  const items = S.kids.map(k => `<a class="chip" href="#kid-${esc(k.id)}" style="--kc:${esc(k.color)}" ${r.kid === k.id ? 'aria-current="page"' : ""}><span class="avatar">${esc(k.name[0] || "?")}</span>${esc(k.name)}</a>`);
+  document.getElementById("nav").innerHTML = `<a class="chip plain" href="#family" ${r.family ? 'aria-current="page"' : ""}>Family</a>` + items.join("");
+}
+
+function meters(kid) {
+  return `<div class="meters">${METALS.map((m, i) => {
+    const g = patchProgress(kid, i);
+    return `<div class="meter" style="--mc:${m.css}"><span>${levelPatchEarned(kid, i) ? "★ " : ""}${m.name}</span><span class="bar"><i style="width:${(g.n / g.total) * 100}%"></i></span><b class="num">${g.n}/${g.total}</b></div>`;
+  }).join("")}</div>`;
+}
+
+function queueHTML(items, showKid) {
+  if (!items.length) return `<p class="notice">Nothing to hand out right now. When a kid finishes a level, its button shows up here.</p>`;
+  return `<div class="queue">${items.map(q => {
+    const st = award(q.kid, q.key)?.status;
+    const kid = kidById(q.kid);
+    const acts = !S.canWrite ? "" : q.patch
+      ? (st === "ordered" ? "" : `<button class="btn ghost" data-award="${esc(q.kid)}|${esc(q.key)}|ordered">Ordered</button>`) + `<button class="btn" data-award="${esc(q.kid)}|${esc(q.key)}|given">Given</button>`
+      : `<button class="btn" data-award="${esc(q.kid)}|${esc(q.key)}|given">Given</button>`;
+    return `<div class="q-item" style="--mc:${METALS[q.metal].css}">
+      <img src="${esc(q.img)}" alt="">
+      <div class="what"><b><span class="kind">${q.kind}</span>${esc(q.title)}</b>
+        <span>${showKid && kid ? esc(kid.name) + " · " : ""}${st === "ordered" ? "Ordered, waiting to arrive" : esc(q.sub)}</span></div>
+      <div class="q-actions">${acts}</div></div>`;
+  }).join("")}</div>`;
+}
+
+function addForm() {
+  if (!S.canWrite) return "";
+  const used = new Set(S.kids.map(k => k.color));
+  const first = KID_COLORS.find(c => !used.has(c)) || KID_COLORS[0];
+  return `<form class="add" id="add-kid">
+    <input type="text" id="kid-name" placeholder="Adventurer's name" maxlength="30" required aria-label="Adventurer's name">
+    <div class="swatches" role="radiogroup" aria-label="Color">${KID_COLORS.map(c => `<label style="--kc:${c}"><input type="radio" name="kc" value="${c}" ${c === first ? "checked" : ""} aria-label="Color ${c}"></label>`).join("")}</div>
+    <button class="btn" type="submit">Add adventurer</button></form>`;
+}
+
+function renderFamily() {
+  if (S.dbState === "none") return `<div class="panel empty"><img src="logos/level-explorer.svg" alt=""><h2>Open in Claude to track progress</h2><p class="muted">Progress is saved to this page's shared tracker, which needs you signed in on claude.ai.</p></div>`;
+  if (!S.kids.length) return `<div class="panel empty">
+      <img src="logos/level-explorer.svg" alt="">
+      <h2 style="margin:10px 0 4px">Add your adventurers</h2>
+      <p class="muted" style="margin:0 auto 16px;max-width:46ch">Each kid gets a badge wall with all ${S.badges.length} badges. Check off requirements as they're signed off, and the tracker tells you which buttons and patches to hand out.</p>
+      <div style="max-width:520px;margin:0 auto">${addForm() || '<p class="notice">Ask the owner of this tracker to add the kids.</p>'}</div></div>`;
+  const all = S.kids.flatMap(k => queueFor(k.id));
+  const cards = S.kids.map(k => {
+    const done = S.badges.filter(b => levelsDone(P(k.id), b) === 3).length;
+    return `<a class="panel kid-card" href="#kid-${esc(k.id)}" style="--kc:${esc(k.color)};color:inherit;text-decoration:none">
+      <div class="row"><span class="avatar lg">${esc(k.name[0] || "?")}</span><div><h3>${esc(k.name)}</h3><span class="muted">${done} badge${done === 1 ? "" : "s"} complete</span></div></div>
+      <div class="xp-big num">${kidXP(k.id).toLocaleString()}<small>XP</small></div>
+      ${meters(k.id)}</a>`;
+  }).join("");
+  return `<div class="kid-grid">${cards}</div>
+    <div class="section-head"><h2>To hand out</h2><span class="label">${all.length} item${all.length === 1 ? "" : "s"}</span></div>
+    <div class="panel">${queueHTML(all, true)}</div>
+    ${S.canWrite ? `<div class="section-head"><h2>Add an adventurer</h2></div><div class="panel">${addForm()}</div>` : ""}`;
+}
+
+function renderKid(id) {
+  const k = kidById(id);
+  if (!k) return `<div class="panel empty"><h2>That adventurer isn't here</h2><p><a href="#family">Back to the family</a></p></div>`;
+  const p = P(id);
+  const done = S.badges.filter(b => levelsDone(p, b) === 3).length;
+  const reqsDone = Object.values(p.reqs || {}).filter(Boolean).length;
+  const q = queueFor(id);
+  const levels = METALS.map((m, i) => {
+    const g = patchProgress(id, i), e = Math.min(tierEpics(id, i), epicsNeeded());
+    return `<div class="lvl-tile ${levelPatchEarned(id, i) ? "won" : ""}" style="--mc:${m.css}"><img src="${m.img}" alt="${m.name} level patch">
+      <div><h3>${m.name} patch</h3><div class="bar"><i style="width:${(g.n / g.total) * 100}%"></i></div>
+      <small class="num">${g.req}/${g.reqTotal} required · ${g.elec}/${g.electives} electives at ${m.name}</small>
+      <div class="epic-dots">${Array.from({ length: epicsNeeded() }, (_, j) => `<span class="${j < e ? "on" : ""}">${m.stars}</span>`).join("")}<small>${e}/${epicsNeeded()} ${m.tier} quests</small></div></div></div>`;
+  }).join("");
+  const cats = S.cat.categories.map(c => {
+    const nDone = c.badges.filter(b => levelsDone(p, b) === 3).length;
+    return `<section class="cat"><div class="cat-head" style="--cc:${c.color}"><span class="n">${c.num}</span><h2>${esc(c.name)}</h2><span class="muted num">${nDone}/${c.badges.length} complete</span></div>
+      <div class="badges">${c.badges.map(b => {
+        const lv = levelsDone(p, b);
+        const pips = METALS.map((m, i) => {
+          const n = levelCount(p, b, i), t = b.levels[i].reqs.length;
+          return `<span class="pip ${n === t ? "done" : n ? "part" : ""}" style="--mc:${m.css}" title="${m.name}: ${n}/${t}"></span>`;
+        }).join("");
+        const pending = q.filter(x => x.badge === b.id).length;
+        return `<button class="badge" data-badge="${b.id}" data-lv="${lv}" style="--bc:${b.color}">
+          <img src="${b.logo}" alt="" loading="lazy"><span class="t">${esc(b.title)}</span>${b.required ? "" : `<span class="elective">Elective</span>`}
+          <span class="pips">${pips}</span><span class="x num">${badgeXP(p, b)} / ${badgeMax(b)} XP</span>
+          ${pending ? `<span class="flag">${pending} to hand out</span>` : ""}</button>`;
+      }).join("")}</div></section>`;
+  }).join("");
+  const danger = !S.canWrite ? "" : S.confirmDelete
+    ? `<div class="danger-zone"><span>Remove ${esc(k.name)} and all their progress? This can't be undone.</span><button class="btn danger" data-act="delete-kid">Remove</button><button class="btn ghost" data-act="cancel-delete">Keep</button></div>`
+    : `<div class="danger-zone"><button class="btn ghost" data-act="ask-delete">Remove ${esc(k.name)}</button></div>`;
+  return `<div class="panel kid-hero" style="--kc:${esc(k.color)}">
+      <div class="who"><span class="avatar lg">${esc(k.name[0] || "?")}</span><div><h1>${esc(k.name)}</h1><span class="muted">CoreXP adventurer</span></div></div>
+      <div class="stats"><div class="stat"><div class="v num">${kidXP(id).toLocaleString()}</div><div class="k">XP earned</div></div>
+        <div class="stat"><div class="v num">${done}</div><div class="k">Badges complete</div></div>
+        <div class="stat"><div class="v num">${reqsDone}</div><div class="k">Requirements signed off</div></div></div>
+    </div>
+    <div class="levels">${levels}</div>
+    ${topPanel(id)}
+    ${q.length ? `<div class="section-head"><h2>To hand out</h2><span class="label">${q.length}</span></div><div class="panel">${queueHTML(q, false)}</div>` : ""}
+    ${cats}${danger}`;
+}
+
+function topPanel(id) {
+  const t = S.cat.top, p = P(id), master = levelPatchEarned(id, 2), n = topCount(id), a = award(id, "top");
+  const dis = S.canWrite ? "" : "disabled";
+  const rows = t.reqs.map(r => {
+    const d = p.reqs?.[tk(r)];
+    return `<label class="req ${d ? "done" : ""}" style="--mc:var(--gold)"><input type="checkbox" data-req="${esc(tk(r))}" data-kid="${esc(id)}" ${d ? "checked" : ""} ${dis}>
+      <span class="txt">${esc(r.text)}</span><span class="meta">${d ? fmtDate(d) : ""}</span></label>`;
+  }).join("");
+  const status = a?.status === "given" ? `Awarded ${fmtDate(a.date)}` : topEarned(id) ? "Earned! Ready to award" : `${n} of ${t.reqs.length} steps done`;
+  return `<details class="panel top-award" ${n || master ? "open" : ""}>
+    <summary><img class="summit ${a?.status === "given" ? "won" : ""}" src="logos/winged-lion-medal.jpg" alt="${esc(t.name)} medal">
+      <div><span class="label">The top award</span><h2>${esc(t.name)}</h2><p class="muted">${esc(t.tagline)}</p></div>
+      <span class="top-status">${esc(status)}</span></summary>
+    <div class="prereq ${master ? "met" : ""}"><b>${master ? "✓" : "○"} Prerequisite:</b> earn the Master patch${master ? "" : " (not yet)"}</div>
+    ${rows}
+    ${a?.status === "given" && S.canWrite ? `<div class="q-actions" style="justify-content:flex-start;margin-top:10px"><button class="btn ghost" data-award="${esc(id)}|top|">Undo award</button></div>` : ""}
+  </details>`;
+}
+
+function render() {
+  if (!S.cat) return;
+  renderNav();
+  const r = route();
+  document.getElementById("main").innerHTML = r.kid ? renderKid(r.kid) : renderFamily();
+  if (S.open) renderSheet();
+}
+
+function renderSheet() {
+  const { kid, badge } = S.open;
+  const b = S.badges.find(x => x.id === badge), p = P(kid), k = kidById(kid);
+  if (!b || !k) return closeSheet();
+  const dis = S.canWrite ? "" : "disabled";
+  const row = (key, text, xp, css) => {
+    const d = p.reqs?.[key];
+    return `<label class="req ${d ? "done" : ""}" style="--mc:${css}"><input type="checkbox" data-req="${esc(key)}" ${d ? "checked" : ""} ${dis}>
+      <span class="txt">${esc(text)}</span><span class="meta"><b class="num">${xp} XP</b>${d ? fmtDate(d) : ""}</span></label>`;
+  };
+  const levels = b.levels.map((lv, i) => `<section class="lv" style="--mc:${METALS[i].css}">
+      <div class="lv-head"><h3>${"★".repeat(i + 1)} ${lv.name}</h3><span class="num">${levelCount(p, b, i)}/${lv.reqs.length} · ${lv.xp} XP</span></div>
+      ${lv.reqs.map(r => row(rk(b, i, r), r.text, r.xp, METALS[i].css)).join("")}</section>`).join("");
+  const epics = `<section class="lv" style="--mc:var(--red)"><div class="lv-head"><h3>⚡ Epic Quests</h3><span class="num">optional</span></div>
+      ${b.epics.map((e, j) => row(ek(b, j), `${e.stars} ${e.tier}: ${e.text}`, e.xp, "var(--red)")).join("")}</section>`;
+  const awardBox = (key, label, css, earned, isPatch) => {
+    const a = award(kid, key);
+    const st = a?.status === "given" ? `Given ${fmtDate(a.date)}` : a?.status === "ordered" ? `Ordered ${fmtDate(a.date)}` : earned ? "Earned, ready to hand out" : "Not earned yet";
+    const acts = !S.canWrite || (!earned && !a) ? "" : a?.status === "given"
+      ? `<button class="btn ghost" data-award="${esc(kid)}|${esc(key)}|">Undo</button>`
+      : (isPatch && a?.status !== "ordered" ? `<button class="btn ghost" data-award="${esc(kid)}|${esc(key)}|ordered">Ordered</button>` : "") + `<button class="btn" data-award="${esc(kid)}|${esc(key)}|given">Given</button>`;
+    return `<div class="award ${a?.status === "given" ? "given" : earned ? "ready" : ""}" style="--mc:${css}"><b>${label}</b><span class="st">${st}</span>${acts ? `<div class="q-actions" style="justify-content:flex-start">${acts}</div>` : ""}</div>`;
+  };
+  const awards = METALS.map((m, i) => awardBox(`${b.id}~btn${i}`, `${m.name} button`, m.css, levelDone(p, b, i), false)).join("")
+    + awardBox(`${b.id}~patch`, "Badge patch", "var(--red)", levelsDone(p, b) === 3, true);
+  const sheet = document.getElementById("sheet");
+  const scroll = sheet.scrollTop;
+  sheet.innerHTML = `<div class="sheet-head"><img src="${b.logo}" alt="">
+      <div><span class="label">${esc(k.name)} · ${badgeXP(p, b)} / ${badgeMax(b)} XP</span><h2 id="sheet-title">${esc(b.title)}</h2><p>${esc(b.tagline)}</p></div>
+      <button class="close" data-act="close" aria-label="Close">×</button></div>
+    <div class="sheet-body">
+      <section class="lv"><div class="lv-head" style="--mc:var(--ink)"><h3 style="color:var(--ink)">Buttons &amp; patch</h3></div><div class="awards">${awards}</div></section>
+      ${levels}${epics}
+      ${S.canWrite ? "" : '<p class="notice" style="margin-top:16px">You can view this tracker. Only the family members who manage it can check things off.</p>'}
+    </div>`;
+  sheet.scrollTop = scroll;
+  if (!sheet.open) sheet.showModal();
+}
+function closeSheet() { S.open = null; const d = document.getElementById("sheet"); if (d.open) d.close(); }
+
+let toastTimer;
+function toast(msg) {
+  let t = document.getElementById("toast");
+  if (!t) { t = document.createElement("div"); t.id = "toast"; t.setAttribute("role", "status");
+    t.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:10px;font-weight:700;z-index:50;max-width:calc(100vw - 32px)";
+    document.body.appendChild(t); }
+  t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3500);
+}
+
+// ---------- Events ----------
+document.addEventListener("click", e => {
+  const el = e.target.closest("[data-badge],[data-award],[data-act]");
+  if (!el) return;
+  if (el.dataset.badge) { S.open = { kid: route().kid, badge: el.dataset.badge }; renderSheet(); return; }
+  if (el.dataset.award !== undefined) { const [kid, key, st] = el.dataset.award.split("|"); setAward(kid, key, st || null); return; }
+  const act = el.dataset.act;
+  if (act === "close") closeSheet();
+  if (act === "ask-delete") { S.confirmDelete = true; render(); }
+  if (act === "cancel-delete") { S.confirmDelete = false; render(); }
+  if (act === "delete-kid") {
+    const id = route().kid; S.confirmDelete = false; location.hash = "family";
+    S.db.doc(`kids/${id}`).delete().then(() => S.db.doc(`progress/${id}`).delete()).then(() => toast("Removed")).catch(() => toast("Couldn't remove. Try again."));
+  }
+});
+document.addEventListener("change", e => {
+  const key = e.target.dataset?.req;
+  const kid = e.target.dataset?.kid || S.open?.kid;
+  if (key && kid) toggleReq(kid, key, e.target.checked);
+});
+document.addEventListener("submit", e => {
+  if (e.target.id !== "add-kid") return;
+  e.preventDefault();
+  const name = document.getElementById("kid-name").value.trim();
+  const color = e.target.querySelector("input[name=kc]:checked")?.value || KID_COLORS[0];
+  if (!name || !S.db) return;
+  const ref = S.db.collection("kids").doc();
+  ref.set({ name, color, order: Date.now() })
+    .then(() => S.db.doc(`progress/${ref.id}`).set({ reqs: {}, awards: {} }))
+    .then(() => { S.progressExists[ref.id] = true; toast(`Added ${name}`); })
+    .catch(e => toast(e?.code === "invalid_argument" ? "You can view this tracker but not change it." : "Couldn't add. Try again."));
+});
+document.getElementById("sheet").addEventListener("close", () => { S.open = null; });
+document.getElementById("sheet").addEventListener("click", e => { if (e.target.id === "sheet") closeSheet(); });
+window.addEventListener("hashchange", () => { S.confirmDelete = false; closeSheet(); render(); scrollTo(0, 0); });
+
+// ---------- Boot ----------
+fetch("catalog.json").then(r => r.json()).then(cat => {
+  S.cat = cat; S.badges = cat.categories.flatMap(c => c.badges.map(b => ({ ...b, cat: c.num })));
+  render();
+}).catch(() => { document.getElementById("main").innerHTML = `<div class="panel empty"><h2>Couldn't load the badges</h2><p class="muted">Reload the page to try again.</p></div>`; });
+
+(async () => {
+  const [db, user] = await Promise.all([window.claude?.use("db") ?? null, window.claude?.use("user") ?? null]);
+  if (!db) { S.dbState = "none"; render(); return; }
+  S.db = db; S.dbState = "ready";
+  const can = user ? await user.can("data.write") : null;
+  S.canWrite = can !== false;
+  db.collection("kids").orderBy("order").onSnapshot(snap => {
+    S.kids = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    render();
+  }, () => toast("Lost the connection to the tracker. Reload to reconnect."));
+  db.collection("progress").onSnapshot(snap => {
+    for (const d of snap.docs) {
+      const data = d.data();
+      S.progress[d.id] = { reqs: { ...(data.reqs || {}) }, awards: { ...(data.awards || {}) } };
+      S.progressExists[d.id] = true;
+    }
+    render();
+  }, () => {});
+})();
+</script>

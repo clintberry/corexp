@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Safety Scout badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#5a3f00"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#fff3c4" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#d99a00"/>
+  <circle cx="200" cy="200" r="118" fill="#fcf6e7" stroke="#fff3c4" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">SAFETY SCOUT</textPath></text>
+    <text font-size="19" fill="#fff3c4" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · LIFE SKILLS</textPath></text>
+  </g>
+  <g fill="#fff3c4">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <path d="M200,112 L272,138 V196 C272,238 244,266 200,286 C156,266 128,238 128,196 V138 Z" fill="#d99a00" stroke="#5a3f00" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M200,130 L256,150 V196 C256,230 234,252 200,268 C166,252 144,230 144,196 V150 Z" fill="#fff3c4"/>
+  <path d="M168,200 L192,226 L236,170" fill="none" stroke="#5a3f00" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

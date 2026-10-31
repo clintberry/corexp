@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Fuel Master badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#2f5e1c"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#5a9e3a"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f6ea" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">FUEL MASTER</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · HEALTH</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <path d="M200,150 C200,135 204,124 212,114" stroke="#6b4423" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M200,148 C180,132 132,136 130,186 C128,236 166,276 190,268 C196,266 204,266 210,268 C234,276 272,236 270,186 C268,136 220,132 200,148 Z" fill="#d9413a" stroke="#2f5e1c" stroke-width="5"/>
+  <path d="M210,128 C222,104 252,104 262,112 C250,132 226,138 210,128 Z" fill="#5a9e3a" stroke="#2f5e1c" stroke-width="4"/>
+  <ellipse cx="160" cy="180" rx="10" ry="20" transform="rotate(20 160 180)" fill="#ffffff" opacity="0.5"/>
+</svg>

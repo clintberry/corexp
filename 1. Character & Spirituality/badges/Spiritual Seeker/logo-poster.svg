@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Spiritual Seeker badge, poster style">
+  <defs>
+    <clipPath id="inner"><circle cx="200" cy="200" r="146"/></clipPath>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#1b2a3a"/>
+    </pattern>
+    <path id="arc-top" d="M 42,200 A 158,158 0 0 1 358,200"/>
+    <path id="arc-bottom" d="M 26,200 A 174,174 0 0 0 374,200"/>
+  </defs>
+
+  <!-- Frame -->
+  <circle cx="200" cy="200" r="196" fill="#1b2a3a"/>
+  <circle cx="200" cy="200" r="189" fill="none" stroke="#f3e6c8" stroke-width="3"/>
+  <circle cx="200" cy="200" r="182" fill="#c1272d"/>
+  <circle cx="200" cy="200" r="150" fill="#1b2a3a"/>
+
+  <!-- Scene -->
+  <g clip-path="url(#inner)">
+    <rect x="0" y="0" width="400" height="400" fill="#f3e6c8"/><g fill="#e3cf9f"><polygon points="200,176 520.0,176.0 515.1,231.6"/><polygon points="200,176 500.7,285.4 477.1,336.0"/><polygon points="200,176 445.1,381.7 405.7,421.1"/><polygon points="200,176 360.0,453.1 309.4,476.7"/><polygon points="200,176 255.6,491.1 200.0,496.0"/><polygon points="200,176 144.4,491.1 90.6,476.7"/><polygon points="200,176 40.0,453.1 -5.7,421.1"/><polygon points="200,176 -45.1,381.7 -77.1,336.0"/><polygon points="200,176 -100.7,285.4 -115.1,231.6"/><polygon points="200,176 -120.0,176.0 -115.1,120.4"/><polygon points="200,176 -100.7,66.6 -77.1,16.0"/><polygon points="200,176 -45.1,-29.7 -5.7,-69.1"/><polygon points="200,176 40.0,-101.1 90.6,-124.7"/><polygon points="200,176 144.4,-139.1 200.0,-144.0"/><polygon points="200,176 255.6,-139.1 309.4,-124.7"/><polygon points="200,176 360.0,-101.1 405.7,-69.1"/><polygon points="200,176 445.1,-29.7 477.1,16.0"/><polygon points="200,176 500.7,66.6 515.1,120.4"/></g>
+
+    <g stroke="#c1272d" stroke-width="8" stroke-linecap="round"><line x1="261.8" y1="159.4" x2="288.9" y2="152.2"/><line x1="245.3" y1="130.7" x2="265.1" y2="110.9"/><line x1="216.6" y1="114.2" x2="223.8" y2="87.1"/><line x1="183.4" y1="114.2" x2="176.2" y2="87.1"/><line x1="154.7" y1="130.7" x2="134.9" y2="110.9"/><line x1="138.2" y1="159.4" x2="111.1" y2="152.2"/></g>
+    <circle cx="200" cy="176" r="54" fill="#c1272d" stroke="#1b2a3a" stroke-width="4"/>
+    <path d="M88,178 L88,250 C128,244 172,248 200,266 C228,248 272,244 312,250 L312,178 Z" fill="#1b2a3a"/>
+    <path d="M200,184 C170,166 132,164 102,172 L102,240 C132,232 170,234 200,252 Z" fill="#f3e6c8" stroke="#1b2a3a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M200,184 C230,166 268,164 298,172 L298,240 C268,232 230,234 200,252 Z" fill="#f3e6c8" stroke="#1b2a3a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M200,184 C230,166 268,164 298,172 L298,240 C268,232 230,234 200,252 Z" fill="url(#dots)" opacity="0.35"/>
+    <g fill="none" stroke="#1b2a3a" stroke-width="3.5" stroke-linecap="round">
+      <path d="M118,190 C142,185 166,188 188,198"/><path d="M118,206 C142,201 166,204 188,214"/><path d="M118,222 C142,217 166,220 188,230"/>
+      <path d="M282,190 C258,185 234,188 212,198"/><path d="M282,206 C258,201 234,204 212,214"/><path d="M282,222 C258,217 234,220 212,230"/>
+    </g>
+  </g>
+
+  <!-- Ring text -->
+  <g font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" text-anchor="middle" fill="#f3e6c8">
+    <text font-size="25" letter-spacing="4"><textPath href="#arc-top" startOffset="50%">SEEK · PRAY · BELIEVE</textPath></text>
+    <text font-size="20" letter-spacing="6"><textPath href="#arc-bottom" startOffset="50%">★ COREXP ★</textPath></text>
+  </g>
+  <g fill="#f3e6c8">
+    <polygon points="34.0,189.0 36.7,196.3 44.5,196.6 38.4,201.4 40.5,208.9 34.0,204.6 27.5,208.9 29.6,201.4 23.5,196.6 31.3,196.3"/>
+    <polygon points="366.0,189.0 368.7,196.3 376.5,196.6 370.4,201.4 372.5,208.9 366.0,204.6 359.5,208.9 361.6,201.4 355.5,196.6 363.3,196.3"/>
+  </g>
+
+  <!-- Banner -->
+  <polygon points="52,266 76,266 76,312 52,312 64,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="348,266 324,266 324,312 348,312 336,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="64,304 76,304 76,312" fill="#1b2a3a"/>
+  <polygon points="336,304 324,304 324,312" fill="#1b2a3a"/>
+  <rect x="64" y="254" width="272" height="50" fill="#c1272d" stroke="#1b2a3a" stroke-width="4"/>
+  <g stroke="#f3e6c8" stroke-width="2"><line x1="71" y1="261" x2="329" y2="261"/><line x1="71" y1="297" x2="329" y2="297"/></g>
+  <text x="200" y="287.4" text-anchor="middle" font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" font-size="23.2" letter-spacing="3" fill="#f3e6c8">SPIRITUAL SEEKER</text>
+</svg>

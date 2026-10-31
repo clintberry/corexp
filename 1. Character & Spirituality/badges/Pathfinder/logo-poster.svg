@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pathfinder badge, poster style">
+  <defs>
+    <clipPath id="inner"><circle cx="200" cy="200" r="146"/></clipPath>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#1b2a3a"/>
+    </pattern>
+    <path id="arc-top" d="M 42,200 A 158,158 0 0 1 358,200"/>
+    <path id="arc-bottom" d="M 26,200 A 174,174 0 0 0 374,200"/>
+  </defs>
+
+  <!-- Frame -->
+  <circle cx="200" cy="200" r="196" fill="#1b2a3a"/>
+  <circle cx="200" cy="200" r="189" fill="none" stroke="#f3e6c8" stroke-width="3"/>
+  <circle cx="200" cy="200" r="182" fill="#c1272d"/>
+  <circle cx="200" cy="200" r="150" fill="#1b2a3a"/>
+
+  <!-- Scene -->
+  <g clip-path="url(#inner)">
+    <rect x="0" y="0" width="400" height="400" fill="#f3e6c8"/><g fill="#e3cf9f"><polygon points="214,150 534.0,150.0 529.1,205.6"/><polygon points="214,150 514.7,259.4 491.1,310.0"/><polygon points="214,150 459.1,355.7 419.7,395.1"/><polygon points="214,150 374.0,427.1 323.4,450.7"/><polygon points="214,150 269.6,465.1 214.0,470.0"/><polygon points="214,150 158.4,465.1 104.6,450.7"/><polygon points="214,150 54.0,427.1 8.3,395.1"/><polygon points="214,150 -31.1,355.7 -63.1,310.0"/><polygon points="214,150 -86.7,259.4 -101.1,205.6"/><polygon points="214,150 -106.0,150.0 -101.1,94.4"/><polygon points="214,150 -86.7,40.6 -63.1,-10.0"/><polygon points="214,150 -31.1,-55.7 8.3,-95.1"/><polygon points="214,150 54.0,-127.1 104.6,-150.7"/><polygon points="214,150 158.4,-165.1 214.0,-170.0"/><polygon points="214,150 269.6,-165.1 323.4,-150.7"/><polygon points="214,150 374.0,-127.1 419.7,-95.1"/><polygon points="214,150 459.1,-55.7 491.1,-10.0"/><polygon points="214,150 514.7,40.6 529.1,94.4"/></g>
+
+    <polygon points="200.0,70.0 208.4,92.4 232.3,93.5 213.6,108.4 220.0,131.5 200.0,118.3 180.0,131.5 186.4,108.4 167.7,93.5 191.6,92.4" fill="#c1272d" stroke="#1b2a3a" stroke-width="4" stroke-linejoin="round"/>
+    <polygon points="40,262 118,182 150,208 214,132 268,198 296,176 360,262 360,360 40,360" fill="#1b2a3a"/>
+    <g fill="#6f96a8">
+      <polygon points="214,132 268,198 240,262 204,262 222,190"/>
+      <polygon points="118,182 150,208 128,262 112,262 132,212"/>
+      <polygon points="296,176 360,262 330,262 310,214"/>
+    </g>
+    <g fill="url(#dots)" opacity="0.55">
+      <polygon points="214,132 268,198 240,262 204,262 222,190"/>
+      <polygon points="296,176 360,262 330,262 310,214"/>
+    </g>
+    <polygon points="214,132 196,160 208,154 216,166 226,152 238,162" fill="#f3e6c8"/>
+    <polygon points="118,182 108,194 118,190 124,198 132,190" fill="#f3e6c8"/>
+    <path d="M178,262 C206,246 172,228 198,210 C220,196 200,180 212,150" fill="none" stroke="#f3e6c8" stroke-width="5" stroke-dasharray="9 7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ring text -->
+  <g font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" text-anchor="middle" fill="#f3e6c8">
+    <text font-size="25" letter-spacing="4"><textPath href="#arc-top" startOffset="50%">LIVE YOUR VALUES</textPath></text>
+    <text font-size="20" letter-spacing="6"><textPath href="#arc-bottom" startOffset="50%">★ COREXP ★</textPath></text>
+  </g>
+  <g fill="#f3e6c8">
+    <polygon points="34.0,189.0 36.7,196.3 44.5,196.6 38.4,201.4 40.5,208.9 34.0,204.6 27.5,208.9 29.6,201.4 23.5,196.6 31.3,196.3"/>
+    <polygon points="366.0,189.0 368.7,196.3 376.5,196.6 370.4,201.4 372.5,208.9 366.0,204.6 359.5,208.9 361.6,201.4 355.5,196.6 363.3,196.3"/>
+  </g>
+
+  <!-- Banner -->
+  <polygon points="52,266 76,266 76,312 52,312 64,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="348,266 324,266 324,312 348,312 336,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="64,304 76,304 76,312" fill="#1b2a3a"/>
+  <polygon points="336,304 324,304 324,312" fill="#1b2a3a"/>
+  <rect x="64" y="254" width="272" height="50" fill="#c1272d" stroke="#1b2a3a" stroke-width="4"/>
+  <g stroke="#f3e6c8" stroke-width="2"><line x1="71" y1="261" x2="329" y2="261"/><line x1="71" y1="297" x2="329" y2="297"/></g>
+  <text x="200" y="292.7" text-anchor="middle" font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" font-size="38" letter-spacing="3" fill="#f3e6c8">PATHFINDER</text>
+</svg>

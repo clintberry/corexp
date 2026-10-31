@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Civic Explorer National badge">
+  <defs>
+    <path id="arc-top" d="M 65.4,200 A 134.6,134.6 0 0 1 334.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#0f1f3d"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#d64545" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#1f3a68"/>
+  <circle cx="200" cy="200" r="118" fill="#f3f0ec" stroke="#d64545" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29.0" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">CIVIC EXPLORER</textPath></text>
+    <text font-size="19" fill="#d64545" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · NATIONAL</textPath></text>
+  </g>
+  <g fill="#d64545">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <defs><clipPath id="flag"><path d="M136,118 C176,104 206,136 246,120 C254,117 260,116 266,118 V206 C232,200 204,226 166,214 C152,210 144,208 136,210 Z"/></clipPath></defs>
+  <line x1="132" y1="110" x2="132" y2="284" stroke="#0f1f3d" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="132" cy="106" r="8" fill="#d64545" stroke="#0f1f3d" stroke-width="3"/>
+  <g clip-path="url(#flag)">
+    <rect x="130" y="96" width="140" height="140" fill="#ffffff"/><rect x="130" y="100" width="140" height="13" fill="#c8323c"/><rect x="130" y="126" width="140" height="13" fill="#c8323c"/><rect x="130" y="152" width="140" height="13" fill="#c8323c"/><rect x="130" y="178" width="140" height="13" fill="#c8323c"/><rect x="130" y="204" width="140" height="13" fill="#c8323c"/><rect x="130" y="230" width="140" height="13" fill="#c8323c"/>
+    <rect x="130" y="96" width="66" height="66" fill="#1f3a68"/>
+    <g fill="#ffffff"><circle cx="150" cy="128" r="4"/><circle cx="168" cy="122" r="4"/><circle cx="184" cy="134" r="4"/><circle cx="156" cy="146" r="4"/><circle cx="176" cy="150" r="4"/></g>
+  </g>
+  <path d="M136,118 C176,104 206,136 246,120 C254,117 260,116 266,118 V206 C232,200 204,226 166,214 C152,210 144,208 136,210 Z" fill="none" stroke="#0f1f3d" stroke-width="5" stroke-linejoin="round"/>
+</svg>

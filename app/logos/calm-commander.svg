@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Calm Commander badge">
+  <defs>
+    <path id="arc-top" d="M 65.4,200 A 134.6,134.6 0 0 1 334.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#17514f"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f6c04d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2f8f8b"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f5ee" stroke="#f6c04d" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29.0" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">CALM COMMANDER</textPath></text>
+    <text font-size="19" fill="#f6c04d" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · RESILIENCE</textPath></text>
+  </g>
+  <g fill="#f6c04d">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g stroke="#f6c04d" stroke-width="7" stroke-linecap="round">
+    <line x1="238" y1="104" x2="238" y2="116"/><line x1="284" y1="164" x2="272" y2="164"/>
+    <line x1="270" y1="128" x2="261" y2="137"/><line x1="206" y1="128" x2="215" y2="137"/>
+  </g>
+  <circle cx="238" cy="164" r="36" fill="#f6c04d"/><circle cx="172" cy="210" r="34" fill="#17514f" stroke="#17514f" stroke-width="10"/><circle cx="212" cy="196" r="42" fill="#17514f" stroke="#17514f" stroke-width="10"/><circle cx="252" cy="218" r="28" fill="#17514f" stroke="#17514f" stroke-width="10"/><rect x="140" y="212" width="136" height="36" rx="18" fill="#17514f" stroke="#17514f" stroke-width="10"/><circle cx="172" cy="210" r="34" fill="#ffffff"/><circle cx="212" cy="196" r="42" fill="#ffffff"/><circle cx="252" cy="218" r="28" fill="#ffffff"/><rect x="140" y="212" width="136" height="36" rx="18" fill="#ffffff"/>
+  <path d="M126,276 q18,-12 36,0 t36,0 t36,0 t36,0" fill="none" stroke="#2f8f8b" stroke-width="7" stroke-linecap="round"/>
+</svg>

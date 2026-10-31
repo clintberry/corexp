@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Digital Creator badge">
+  <defs>
+    <path id="arc-top" d="M 64.9,200 A 135.1,135.1 0 0 1 335.1,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#151c25"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#4fd1c5" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2d3a4a"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f0ea" stroke="#4fd1c5" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="27.6" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">DIGITAL CREATOR</textPath></text>
+    <text font-size="19" fill="#4fd1c5" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CREATIVITY</textPath></text>
+  </g>
+  <g fill="#4fd1c5">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <rect x="120" y="128" width="160" height="112" rx="12" fill="#151c25"/>
+  <rect x="132" y="140" width="136" height="86" rx="5" fill="#4fd1c5"/>
+  <polygon points="184,240 216,240 222,262 178,262" fill="#151c25"/>
+  <rect x="160" y="260" width="80" height="12" rx="6" fill="#151c25"/>
+  <text x="200" y="198" text-anchor="middle" font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" font-size="44" fill="#151c25">&lt;/&gt;</text>
+</svg>

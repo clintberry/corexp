@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Kindness Agent badge, poster style">
+  <defs>
+    <clipPath id="inner"><circle cx="200" cy="200" r="146"/></clipPath>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#1b2a3a"/>
+    </pattern>
+    <path id="arc-top" d="M 42,200 A 158,158 0 0 1 358,200"/>
+    <path id="arc-bottom" d="M 26,200 A 174,174 0 0 0 374,200"/>
+    <clipPath id="heart"><path d="M0,30 C-40,0 -45,-30 -25,-40 C-12,-47 -2,-40 0,-28 C2,-40 12,-47 25,-40 C45,-30 40,0 0,30 Z" transform="translate(200 178) scale(2.1)"/></clipPath>
+  </defs>
+
+  <!-- Frame -->
+  <circle cx="200" cy="200" r="196" fill="#1b2a3a"/>
+  <circle cx="200" cy="200" r="189" fill="none" stroke="#f3e6c8" stroke-width="3"/>
+  <circle cx="200" cy="200" r="182" fill="#c1272d"/>
+  <circle cx="200" cy="200" r="150" fill="#1b2a3a"/>
+
+  <!-- Scene -->
+  <g clip-path="url(#inner)">
+    <rect x="0" y="0" width="400" height="400" fill="#f3e6c8"/><g fill="#e3cf9f"><polygon points="200,170 520.0,170.0 515.1,225.6"/><polygon points="200,170 500.7,279.4 477.1,330.0"/><polygon points="200,170 445.1,375.7 405.7,415.1"/><polygon points="200,170 360.0,447.1 309.4,470.7"/><polygon points="200,170 255.6,485.1 200.0,490.0"/><polygon points="200,170 144.4,485.1 90.6,470.7"/><polygon points="200,170 40.0,447.1 -5.7,415.1"/><polygon points="200,170 -45.1,375.7 -77.1,330.0"/><polygon points="200,170 -100.7,279.4 -115.1,225.6"/><polygon points="200,170 -120.0,170.0 -115.1,114.4"/><polygon points="200,170 -100.7,60.6 -77.1,10.0"/><polygon points="200,170 -45.1,-35.7 -5.7,-75.1"/><polygon points="200,170 40.0,-107.1 90.6,-130.7"/><polygon points="200,170 144.4,-145.1 200.0,-150.0"/><polygon points="200,170 255.6,-145.1 309.4,-130.7"/><polygon points="200,170 360.0,-107.1 405.7,-75.1"/><polygon points="200,170 445.1,-35.7 477.1,10.0"/><polygon points="200,170 500.7,60.6 515.1,114.4"/></g>
+
+    <path d="M0,30 C-40,0 -45,-30 -25,-40 C-12,-47 -2,-40 0,-28 C2,-40 12,-47 25,-40 C45,-30 40,0 0,30 Z" transform="translate(200 178) scale(2.1)" fill="#c1272d" stroke="#1b2a3a" stroke-width="3"/>
+    <g clip-path="url(#heart)"><rect x="204" y="60" width="110" height="200" fill="url(#dots)" opacity="0.45"/></g>
+    <ellipse cx="146" cy="120" rx="10" ry="18" transform="rotate(35 146 120)" fill="#f3e6c8"/>
+    <g fill="#1b2a3a">
+      <rect x="140" y="146" width="54" height="30" rx="9"/>
+      <rect x="206" y="146" width="54" height="30" rx="9"/>
+      <rect x="188" y="151" width="24" height="7" rx="3"/>
+    </g>
+    <g fill="#6f96a8"><rect x="150" y="153" width="14" height="6" rx="3"/><rect x="216" y="153" width="14" height="6" rx="3"/></g>
+    <path d="M170,200 Q200,226 230,200" fill="none" stroke="#1b2a3a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ring text -->
+  <g font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" text-anchor="middle" fill="#f3e6c8">
+    <text font-size="25" letter-spacing="4"><textPath href="#arc-top" startOffset="50%">SERVE · UPLIFT · LOVE</textPath></text>
+    <text font-size="20" letter-spacing="6"><textPath href="#arc-bottom" startOffset="50%">★ COREXP ★</textPath></text>
+  </g>
+  <g fill="#f3e6c8">
+    <polygon points="34.0,189.0 36.7,196.3 44.5,196.6 38.4,201.4 40.5,208.9 34.0,204.6 27.5,208.9 29.6,201.4 23.5,196.6 31.3,196.3"/>
+    <polygon points="366.0,189.0 368.7,196.3 376.5,196.6 370.4,201.4 372.5,208.9 366.0,204.6 359.5,208.9 361.6,201.4 355.5,196.6 363.3,196.3"/>
+  </g>
+
+  <!-- Banner -->
+  <polygon points="52,266 76,266 76,312 52,312 64,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="348,266 324,266 324,312 348,312 336,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="64,304 76,304 76,312" fill="#1b2a3a"/>
+  <polygon points="336,304 324,304 324,312" fill="#1b2a3a"/>
+  <rect x="64" y="254" width="272" height="50" fill="#c1272d" stroke="#1b2a3a" stroke-width="4"/>
+  <g stroke="#f3e6c8" stroke-width="2"><line x1="71" y1="261" x2="329" y2="261"/><line x1="71" y1="297" x2="329" y2="297"/></g>
+  <text x="200" y="288.8" text-anchor="middle" font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" font-size="27.3" letter-spacing="3" fill="#f3e6c8">KINDNESS AGENT</text>
+</svg>

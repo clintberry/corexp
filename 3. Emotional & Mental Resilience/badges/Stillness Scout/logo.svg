@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Stillness Scout badge">
+  <defs>
+    <path id="arc-top" d="M 64.9,200 A 135.1,135.1 0 0 1 335.1,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#3d5e48"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f3d27a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#6e9c7f"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f6ed" stroke="#f3d27a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="27.6" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">STILLNESS SCOUT</textPath></text>
+    <text font-size="19" fill="#f3d27a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · RESILIENCE</textPath></text>
+  </g>
+  <g fill="#f3d27a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <circle cx="200" cy="150" r="30" fill="#f3d27a" opacity="0.7"/>
+  <g stroke="#3d5e48" stroke-width="4">
+    <ellipse cx="200" cy="195" rx="20" ry="46" transform="rotate(-70 200 240)" fill="#f7c6d2"/>
+    <ellipse cx="200" cy="195" rx="20" ry="46" transform="rotate(70 200 240)" fill="#f7c6d2"/>
+    <ellipse cx="200" cy="195" rx="22" ry="48" transform="rotate(-35 200 240)" fill="#f2a5b8"/>
+    <ellipse cx="200" cy="195" rx="22" ry="48" transform="rotate(35 200 240)" fill="#f2a5b8"/>
+    <ellipse cx="200" cy="192" rx="24" ry="50" fill="#ee8fa8"/>
+  </g>
+  <g fill="none" stroke="#6e9c7f" stroke-width="6" stroke-linecap="round">
+    <path d="M122,258 q19,-10 39,0 t39,0 t39,0 t39,0"/><path d="M142,276 q19,-10 39,0 t39,0 t39,0"/>
+  </g>
+</svg>

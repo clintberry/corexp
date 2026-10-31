@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Spiritual Seeker badge">
+  <defs>
+    <path id="arc-top" d="M 67,200 A 133,133 0 0 1 333,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#1a2f52"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2b4c7e"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f1e3" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="26" fill="#ffffff" letter-spacing="2.5"><textPath href="#arc-top" startOffset="50%">SPIRITUAL SEEKER</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CHARACTER</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Light rising -->
+  <g stroke="#f2c14e" stroke-width="8" stroke-linecap="round">
+    <line x1="246" y1="182" x2="288" y2="182"/>
+    <line x1="240" y1="159" x2="276" y2="138"/>
+    <line x1="223" y1="142" x2="244" y2="106"/>
+    <line x1="200" y1="136" x2="200" y2="94"/>
+    <line x1="177" y1="142" x2="156" y2="106"/>
+    <line x1="160" y1="159" x2="124" y2="138"/>
+    <line x1="154" y1="182" x2="112" y2="182"/>
+  </g>
+  <circle cx="200" cy="182" r="34" fill="#f2c14e"/>
+
+  <!-- Open book -->
+  <path d="M110,210 L110,274 C146,268 180,272 200,288 C220,272 254,268 290,274 L290,210 Z" fill="#1a2f52"/>
+  <path d="M200,214 C176,200 146,198 122,204 L122,266 C146,260 176,262 200,276 Z" fill="#ffffff" stroke="#2b4c7e" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M200,214 C224,200 254,198 278,204 L278,266 C254,260 224,262 200,276 Z" fill="#ffffff" stroke="#2b4c7e" stroke-width="4" stroke-linejoin="round"/>
+  <g stroke="#a9b8d0" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M136,220 C154,217 172,219 188,226"/>
+    <path d="M136,234 C154,231 172,233 188,240"/>
+    <path d="M136,248 C154,245 172,247 188,254"/>
+    <path d="M264,220 C246,217 228,219 212,226"/>
+    <path d="M264,234 C246,231 228,233 212,240"/>
+    <path d="M264,248 C246,245 228,247 212,254"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="First Aid Hero badge">
+  <defs>
+    <path id="arc-top" d="M 65.4,200 A 134.6,134.6 0 0 1 334.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#7a1f1c"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#c8403a"/>
+  <circle cx="200" cy="200" r="118" fill="#fcf1ea" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29.0" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">FIRST AID HERO</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · HEALTH</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <path d="M170,152 V132 Q170,120 182,120 H218 Q230,120 230,132 V152" fill="none" stroke="#7a1f1c" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="120" y="150" width="160" height="115" rx="18" fill="#c8403a" stroke="#7a1f1c" stroke-width="6"/>
+  <path d="M188,172 h24 v24 h24 v24 h-24 v24 h-24 v-24 h-24 v-24 h24 z" fill="#ffffff"/>
+</svg>

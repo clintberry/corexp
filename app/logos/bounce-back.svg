@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Bounce Back badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#8e3523"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#ffd25a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#e8664a"/>
+  <circle cx="200" cy="200" r="118" fill="#fdf3ea" stroke="#ffd25a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">BOUNCE BACK</textPath></text>
+    <text font-size="19" fill="#ffd25a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · RESILIENCE</textPath></text>
+  </g>
+  <g fill="#ffd25a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <line x1="128" y1="266" x2="272" y2="266" stroke="#8e3523" stroke-width="6" stroke-linecap="round"/>
+  <path d="M118,182 Q148,264 166,264 Q186,264 206,186" fill="none" stroke="#8e3523" stroke-width="5" stroke-dasharray="2 11" stroke-linecap="round"/>
+  <g stroke="#8e3523" stroke-width="4" stroke-linecap="round">
+    <line x1="150" y1="250" x2="142" y2="240"/><line x1="166" y1="248" x2="166" y2="236"/><line x1="182" y1="250" x2="190" y2="240"/>
+  </g>
+  <circle cx="232" cy="152" r="38" fill="#e8664a" stroke="#8e3523" stroke-width="5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+    <path d="M200,140 C220,150 244,150 266,138"/><path d="M214,182 C226,160 228,136 220,116"/>
+  </g>
+</svg>

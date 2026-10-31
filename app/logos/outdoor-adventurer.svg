@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Outdoor Adventurer badge">
+  <defs>
+    <path id="arc-top" d="M 63.69999999999999,200 A 136.3,136.3 0 0 1 336.3,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#5e3214"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f3d27a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#b5652f"/>
+  <circle cx="200" cy="200" r="118" fill="#faf3e9" stroke="#f3d27a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="24.2" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">OUTDOOR ADVENTURER</textPath></text>
+    <text font-size="19" fill="#f3d27a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · NATURE</textPath></text>
+  </g>
+  <g fill="#f3d27a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <circle cx="262" cy="152" r="22" fill="#f3d27a"/>
+  <polygon points="122,256 206,132 290,256" fill="#5b7a99" stroke="#5e3214" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="206,132 184,164 196,158 206,170 216,158 229,166" fill="#ffffff"/>
+  <polygon points="112,256 160,186 214,256" fill="#3e5a74" stroke="#5e3214" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="160,186 146,206 156,202 162,210 170,202" fill="#ffffff"/>
+  <path d="M244,256 L262,214 L280,256 Z" fill="#2f6e4f" stroke="#5e3214" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="106" y1="258" x2="294" y2="258" stroke="#5e3214" stroke-width="6" stroke-linecap="round"/>
+</svg>

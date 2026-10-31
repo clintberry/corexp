@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Mind Master badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#45276a"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#7b4ba8"/>
+  <circle cx="200" cy="200" r="118" fill="#f8f2ef" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">MIND MASTER</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · RESILIENCE</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon --><circle cx="165" cy="182" r="42" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="210" cy="160" r="45" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="250" cy="192" r="38" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="180" cy="228" r="38" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="232" cy="232" r="36" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="146" cy="216" r="30" fill="#45276a" stroke="#45276a" stroke-width="10"/><circle cx="165" cy="182" r="42" fill="#f2a0b8"/><circle cx="210" cy="160" r="45" fill="#f2a0b8"/><circle cx="250" cy="192" r="38" fill="#f2a0b8"/><circle cx="180" cy="228" r="38" fill="#f2a0b8"/><circle cx="232" cy="232" r="36" fill="#f2a0b8"/><circle cx="146" cy="216" r="30" fill="#f2a0b8"/>
+  <g fill="none" stroke="#45276a" stroke-width="5" stroke-linecap="round">
+    <path d="M206,122 C196,150 216,176 202,204 C192,224 206,244 204,262"/>
+    <path d="M150,176 C164,170 174,180 172,194"/><path d="M234,166 C248,162 256,172 254,184"/>
+    <path d="M168,234 C178,226 190,232 190,244"/><path d="M226,214 C236,210 246,218 244,230"/>
+  </g>
+  <path d="M286,116 Q286,128 298,128 Q286,128 286,140 Q286,128 274,128 Q286,128 286,116 Z" fill="#f2c14e"/>
+</svg>

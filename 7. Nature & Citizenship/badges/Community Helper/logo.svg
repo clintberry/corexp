@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Community Helper badge">
+  <defs>
+    <path id="arc-top" d="M 64.5,200 A 135.5,135.5 0 0 1 335.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#164a5e"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#2e7f9e"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f4ee" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="26.3" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">COMMUNITY HELPER</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · NATURE</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <path d="M0,30 C-40,0 -45,-30 -25,-40 C-12,-47 -2,-40 0,-28 C2,-40 12,-47 25,-40 C45,-30 40,0 0,30 Z" transform="translate(200 138) scale(0.75)" fill="#f2c14e" stroke="#164a5e" stroke-width="6"/>
+  <g stroke="#164a5e" stroke-width="5" stroke-linejoin="round">
+    <rect x="114" y="214" width="44" height="48" fill="#ffffff"/><polygon points="106,216 136,188 166,216" fill="#2e7f9e"/>
+    <rect x="242" y="214" width="44" height="48" fill="#ffffff"/><polygon points="234,216 264,188 294,216" fill="#2e7f9e"/>
+    <rect x="172" y="196" width="56" height="66" fill="#ffffff"/><polygon points="164,198 200,164 236,198" fill="#2e7f9e"/>
+  </g>
+  <g fill="#164a5e"><rect x="128" y="236" width="16" height="26"/><rect x="256" y="236" width="16" height="26"/><rect x="190" y="230" width="20" height="32"/></g>
+  <line x1="110" y1="262" x2="290" y2="262" stroke="#164a5e" stroke-width="6" stroke-linecap="round"/>
+</svg>

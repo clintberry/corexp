@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Music Explorer badge">
+  <defs>
+    <path id="arc-top" d="M 65.4,200 A 134.6,134.6 0 0 1 334.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#322880"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f6c04d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#5b4bb7"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f2f0" stroke="#f6c04d" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="29.0" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">MUSIC EXPLORER</textPath></text>
+    <text font-size="19" fill="#f6c04d" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CREATIVITY</textPath></text>
+  </g>
+  <g fill="#f6c04d">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g fill="#322880">
+    <ellipse cx="160" cy="252" rx="27" ry="20" transform="rotate(-20 160 252)"/>
+    <ellipse cx="240" cy="232" rx="27" ry="20" transform="rotate(-20 240 232)"/>
+    <rect x="178" y="150" width="9" height="100"/><rect x="258" y="130" width="9" height="100"/>
+    <polygon points="178,150 267,130 267,158 178,178"/>
+  </g>
+  <path d="M130,130 Q130,144 144,144 Q130,144 130,158 Q130,144 116,144 Q130,144 130,130 Z" fill="#f6c04d"/>
+  <path d="M286,196 Q286,206 296,206 Q286,206 286,216 Q286,206 276,206 Q286,206 286,196 Z" fill="#f6c04d"/>
+</svg>

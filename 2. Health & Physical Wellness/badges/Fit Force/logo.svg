@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Fit Force badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#8a4210"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#ffd25a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#e07a1f"/>
+  <circle cx="200" cy="200" r="118" fill="#fcf4e8" stroke="#ffd25a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">FIT FORCE</textPath></text>
+    <text font-size="19" fill="#ffd25a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · HEALTH</textPath></text>
+  </g>
+  <g fill="#ffd25a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <rect x="130" y="192" width="140" height="16" rx="6" fill="#8a4210"/>
+  <rect x="100" y="174" width="22" height="52" rx="7" fill="#e07a1f" stroke="#8a4210" stroke-width="5"/>
+  <rect x="120" y="158" width="26" height="84" rx="8" fill="#e07a1f" stroke="#8a4210" stroke-width="5"/>
+  <rect x="254" y="158" width="26" height="84" rx="8" fill="#e07a1f" stroke="#8a4210" stroke-width="5"/>
+  <rect x="278" y="174" width="22" height="52" rx="7" fill="#e07a1f" stroke="#8a4210" stroke-width="5"/>
+  <polygon points="210,106 180,150 198,150 188,184 224,136 205,136 216,106" fill="#ffd25a" stroke="#8a4210" stroke-width="4" stroke-linejoin="round"/>
+</svg>

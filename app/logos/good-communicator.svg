@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Good Communicator badge">
+  <defs>
+    <path id="arc-top" d="M 64.1,200 A 135.9,135.9 0 0 1 335.9,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#1f4785"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f6c04d" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#3b7dd8"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f4f2" stroke="#f6c04d" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="25.2" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">GOOD COMMUNICATOR</textPath></text>
+    <text font-size="19" fill="#f6c04d" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · SOCIAL</textPath></text>
+  </g>
+  <g fill="#f6c04d">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <path d="M142,130 H214 Q238,130 238,154 V186 Q238,210 214,210 H172 L136,236 L144,208 Q118,204 118,180 V154 Q118,130 142,130 Z" fill="#3b7dd8" stroke="#1f4785" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#ffffff"><circle cx="150" cy="170" r="8"/><circle cx="178" cy="170" r="8"/><circle cx="206" cy="170" r="8"/></g>
+  <path d="M192,186 H260 Q284,186 284,210 V236 Q284,258 262,260 L270,284 L238,260 H192 Q168,260 168,236 V210 Q168,186 192,186 Z" fill="#f6c04d" stroke="#1f4785" stroke-width="5" stroke-linejoin="round"/>
+  <g stroke="#1f4785" stroke-width="5" stroke-linecap="round"><line x1="190" y1="214" x2="262" y2="214"/><line x1="190" y1="234" x2="244" y2="234"/></g>
+</svg>

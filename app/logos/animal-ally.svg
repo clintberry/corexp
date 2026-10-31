@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Animal Ally badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#4e301d"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f2c14e" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#8b5a3c"/>
+  <circle cx="200" cy="200" r="118" fill="#f8f2ea" stroke="#f2c14e" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">ANIMAL ALLY</textPath></text>
+    <text font-size="19" fill="#f2c14e" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · NATURE</textPath></text>
+  </g>
+  <g fill="#f2c14e">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g fill="#4e301d">
+    <ellipse cx="146" cy="180" rx="17" ry="23" transform="rotate(-22 146 180)"/>
+    <ellipse cx="180" cy="146" rx="18" ry="25" transform="rotate(-8 180 146)"/>
+    <ellipse cx="220" cy="146" rx="18" ry="25" transform="rotate(8 220 146)"/>
+    <ellipse cx="254" cy="180" rx="17" ry="23" transform="rotate(22 254 180)"/>
+    <path d="M200,198 C232,198 256,228 254,252 C252,274 228,276 200,266 C172,276 148,274 146,252 C144,228 168,198 200,198 Z"/>
+  </g>
+  <path d="M0,30 C-40,0 -45,-30 -25,-40 C-12,-47 -2,-40 0,-28 C2,-40 12,-47 25,-40 C45,-30 40,0 0,30 Z" transform="translate(200 236) scale(0.5)" fill="#f2c14e"/>
+</svg>

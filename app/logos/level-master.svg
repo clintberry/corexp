@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="CoreXP Master level patch, poster style">
+  <defs>
+    <clipPath id="inner"><circle cx="200" cy="200" r="146"/></clipPath>
+    <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#1b2a3a"/>
+    </pattern>
+    <path id="arc-top" d="M 42,200 A 158,158 0 0 1 358,200"/>
+    <path id="arc-bottom" d="M 26,200 A 174,174 0 0 0 374,200"/>
+  </defs>
+
+  <!-- Frame -->
+  <circle cx="200" cy="200" r="196" fill="#1b2a3a"/>
+  <circle cx="200" cy="200" r="189" fill="none" stroke="#f3e6c8" stroke-width="3"/>
+  <circle cx="200" cy="200" r="182" fill="#d6a531"/>
+  <circle cx="200" cy="200" r="150" fill="#1b2a3a"/>
+
+  <!-- Scene -->
+  <g clip-path="url(#inner)">
+    <rect x="0" y="0" width="400" height="400" fill="#f3e6c8"/><g fill="#e3cf9f"><polygon points="200,160 520.0,160.0 515.1,215.6"/><polygon points="200,160 500.7,269.4 477.1,320.0"/><polygon points="200,160 445.1,365.7 405.7,405.1"/><polygon points="200,160 360.0,437.1 309.4,460.7"/><polygon points="200,160 255.6,475.1 200.0,480.0"/><polygon points="200,160 144.4,475.1 90.6,460.7"/><polygon points="200,160 40.0,437.1 -5.7,405.1"/><polygon points="200,160 -45.1,365.7 -77.1,320.0"/><polygon points="200,160 -100.7,269.4 -115.1,215.6"/><polygon points="200,160 -120.0,160.0 -115.1,104.4"/><polygon points="200,160 -100.7,50.6 -77.1,-0.0"/><polygon points="200,160 -45.1,-45.7 -5.7,-85.1"/><polygon points="200,160 40.0,-117.1 90.6,-140.7"/><polygon points="200,160 144.4,-155.1 200.0,-160.0"/><polygon points="200,160 255.6,-155.1 309.4,-140.7"/><polygon points="200,160 360.0,-117.1 405.7,-85.1"/><polygon points="200,160 445.1,-45.7 477.1,0.0"/><polygon points="200,160 500.7,50.6 515.1,104.4"/></g>
+
+    <g fill="#1b2a3a"><polyline points="172.2,253.6 163.4,250.2 155.0,245.9 147.1,240.8 139.8,234.9 133.1,228.2 127.2,220.9 122.1,213.0 117.8,204.6 114.4,195.8 112.0,186.7 110.5,177.4 110.0,168.0 110.5,158.6 112.0,149.3 114.4,140.2 117.8,131.4 122.1,123.0 127.2,115.1 133.1,107.8 139.8,101.1" fill="none" stroke="#1b2a3a" stroke-width="5" stroke-linecap="round"/><ellipse cx="143.4" cy="249.7" rx="7" ry="17" transform="rotate(82.6 143.4 249.7)"/><ellipse cx="151.4" cy="234.4" rx="7" ry="17" transform="rotate(152.6 151.4 234.4)"/><ellipse cx="118.5" cy="224.8" rx="7" ry="17" transform="rotate(103.0 118.5 224.8)"/><ellipse cx="131.3" cy="213.3" rx="7" ry="17" transform="rotate(173.0 131.3 213.3)"/><ellipse cx="103.8" cy="192.9" rx="7" ry="17" transform="rotate(123.4 103.8 192.9)"/><ellipse cx="119.8" cy="186.5" rx="7" ry="17" transform="rotate(193.4 119.8 186.5)"/><ellipse cx="101.2" cy="157.8" rx="7" ry="17" transform="rotate(143.8 101.2 157.8)"/><ellipse cx="118.4" cy="157.4" rx="7" ry="17" transform="rotate(213.8 118.4 157.4)"/><ellipse cx="110.9" cy="124.0" rx="7" ry="17" transform="rotate(164.2 110.9 124.0)"/><ellipse cx="127.2" cy="129.6" rx="7" ry="17" transform="rotate(234.2 127.2 129.6)"/><ellipse cx="131.9" cy="95.7" rx="7" ry="17" transform="rotate(184.6 131.9 95.7)"/><ellipse cx="145.1" cy="106.6" rx="7" ry="17" transform="rotate(254.6 145.1 106.6)"/><ellipse cx="148.7" cy="93.1" rx="7" ry="16" transform="rotate(228.0 148.7 93.1)"/><polyline points="227.8,253.6 236.6,250.2 245.0,245.9 252.9,240.8 260.2,234.9 266.9,228.2 272.8,220.9 277.9,213.0 282.2,204.6 285.6,195.8 288.0,186.7 289.5,177.4 290.0,168.0 289.5,158.6 288.0,149.3 285.6,140.2 282.2,131.4 277.9,123.0 272.8,115.1 266.9,107.8 260.2,101.1" fill="none" stroke="#1b2a3a" stroke-width="5" stroke-linecap="round"/><ellipse cx="248.6" cy="234.4" rx="7" ry="17" transform="rotate(-152.6 248.6 234.4)"/><ellipse cx="256.6" cy="249.7" rx="7" ry="17" transform="rotate(-82.6 256.6 249.7)"/><ellipse cx="268.7" cy="213.3" rx="7" ry="17" transform="rotate(-173.0 268.7 213.3)"/><ellipse cx="281.5" cy="224.8" rx="7" ry="17" transform="rotate(-103.0 281.5 224.8)"/><ellipse cx="280.2" cy="186.5" rx="7" ry="17" transform="rotate(-193.4 280.2 186.5)"/><ellipse cx="296.2" cy="192.9" rx="7" ry="17" transform="rotate(-123.4 296.2 192.9)"/><ellipse cx="281.6" cy="157.4" rx="7" ry="17" transform="rotate(-213.8 281.6 157.4)"/><ellipse cx="298.8" cy="157.8" rx="7" ry="17" transform="rotate(-143.8 298.8 157.8)"/><ellipse cx="272.8" cy="129.6" rx="7" ry="17" transform="rotate(-234.2 272.8 129.6)"/><ellipse cx="289.1" cy="124.0" rx="7" ry="17" transform="rotate(-164.2 289.1 124.0)"/><ellipse cx="254.9" cy="106.6" rx="7" ry="17" transform="rotate(-254.6 254.9 106.6)"/><ellipse cx="268.1" cy="95.7" rx="7" ry="17" transform="rotate(-184.6 268.1 95.7)"/><ellipse cx="251.3" cy="93.1" rx="7" ry="16" transform="rotate(-228.0 251.3 93.1)"/></g>
+    <path d="M150,256 C170,262 190,262 200,256 C210,262 230,262 250,256" fill="none" stroke="#1b2a3a" stroke-width="7" stroke-linecap="round"/>
+    <path d="M200,58 C222,86 240,104 230,132 C224,150 210,156 200,156 C188,156 172,150 168,130 C162,106 186,98 184,78 C196,92 200,84 200,58 Z" fill="#c1272d" stroke="#1b2a3a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M200,96 C212,112 218,126 212,140 C208,148 192,148 188,140 C182,128 196,118 200,96 Z" fill="#e9b949"/>
+    <path d="M172,156 L228,156 L220,178 L180,178 Z" fill="#6f96a8" stroke="#1b2a3a" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M172,156 L228,156 L220,178 L180,178 Z" fill="url(#dots)" opacity="0.5"/>
+    <path d="M186,178 L214,178 L206,256 L194,256 Z" fill="#1b2a3a"/>
+    <g stroke="#f3e6c8" stroke-width="3"><line x1="189" y1="196" x2="211" y2="196"/><line x1="191" y1="214" x2="209" y2="214"/></g>
+  </g>
+
+  <!-- Ring text -->
+  <g font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" text-anchor="middle" fill="#1b2a3a">
+    <text font-size="25" letter-spacing="4"><textPath href="#arc-top" startOffset="50%">LEAD · TEACH · INSPIRE</textPath></text>
+    <text font-size="20" letter-spacing="6"><textPath href="#arc-bottom" startOffset="50%">★★★ COREXP ★★★</textPath></text>
+  </g>
+  <g fill="#1b2a3a">
+    <polygon points="34.0,189.0 36.7,196.3 44.5,196.6 38.4,201.4 40.5,208.9 34.0,204.6 27.5,208.9 29.6,201.4 23.5,196.6 31.3,196.3"/>
+    <polygon points="366.0,189.0 368.7,196.3 376.5,196.6 370.4,201.4 372.5,208.9 366.0,204.6 359.5,208.9 361.6,201.4 355.5,196.6 363.3,196.3"/>
+  </g>
+
+  <!-- Banner -->
+  <polygon points="52,266 76,266 76,312 52,312 64,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="348,266 324,266 324,312 348,312 336,289" fill="#8e1b20" stroke="#1b2a3a" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="64,304 76,304 76,312" fill="#1b2a3a"/>
+  <polygon points="336,304 324,304 324,312" fill="#1b2a3a"/>
+  <rect x="64" y="254" width="272" height="50" fill="#c1272d" stroke="#1b2a3a" stroke-width="4"/>
+  <g stroke="#f3e6c8" stroke-width="2"><line x1="71" y1="261" x2="329" y2="261"/><line x1="71" y1="297" x2="329" y2="297"/></g>
+  <text x="200" y="292.7" text-anchor="middle" font-family="Oswald, Impact, Haettenschweiler, 'Arial Narrow', sans-serif" font-weight="700" font-size="38" letter-spacing="5" fill="#f3e6c8">MASTER</text>
+</svg>

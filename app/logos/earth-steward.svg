@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Earth Steward badge">
+  <defs>
+    <path id="arc-top" d="M 66.4,200 A 133.6,133.6 0 0 1 333.6,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#1f5228"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#e9c46a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#3f8e4a"/>
+  <circle cx="200" cy="200" r="118" fill="#f4f5ea" stroke="#e9c46a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="31.6" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">EARTH STEWARD</textPath></text>
+    <text font-size="19" fill="#e9c46a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · NATURE</textPath></text>
+  </g>
+  <g fill="#e9c46a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <circle cx="256" cy="126" r="18" fill="#e9c46a"/>
+  <path d="M200,262 C200,236 200,206 200,184" stroke="#4b8b3b" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M200,206 C170,206 146,186 140,156 C172,156 196,174 200,206 Z" fill="#3f8e4a" stroke="#1f5228" stroke-width="4"/>
+  <path d="M200,186 C222,162 250,152 270,160 C260,188 228,198 200,186 Z" fill="#79b85a" stroke="#1f5228" stroke-width="4"/>
+  <path d="M128,274 Q200,230 272,274 Z" fill="#8b5a3c" stroke="#5a3a26" stroke-width="4" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Fix It Scout badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#2e4152"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f29e38" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#56718a"/>
+  <circle cx="200" cy="200" r="118" fill="#f6f4ee" stroke="#f29e38" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">FIX-IT SCOUT</textPath></text>
+    <text font-size="19" fill="#f29e38" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · LIFE SKILLS</textPath></text>
+  </g>
+  <g fill="#f29e38">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <g transform="rotate(-45 200 200)">
+    <rect x="195" y="112" width="10" height="92" fill="#9aa6b2"/>
+    <polygon points="195,114 205,114 203,102 197,102" fill="#9aa6b2"/>
+    <rect x="182" y="198" width="36" height="84" rx="13" fill="#f29e38" stroke="#2e4152" stroke-width="4"/>
+    <g stroke="#2e4152" stroke-width="3" opacity="0.5"><line x1="194" y1="214" x2="194" y2="266"/><line x1="206" y1="214" x2="206" y2="266"/></g>
+  </g>
+  <g transform="rotate(45 200 200)" fill="#2e4152">
+    <circle cx="200" cy="138" r="32"/>
+    <rect x="189" y="150" width="22" height="122" rx="11"/>
+    <circle cx="200" cy="274" r="18"/>
+    <rect x="190" y="100" width="20" height="38" fill="#f6f4ee"/>
+    <circle cx="200" cy="274" r="8" fill="#f6f4ee"/>
+  </g>
+</svg>

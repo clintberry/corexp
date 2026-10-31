@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Rest and Recharge badge">
+  <defs>
+    <path id="arc-top" d="M 64.9,200 A 135.1,135.1 0 0 1 335.1,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#2a2961"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#f7d96b" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#4b4a9c"/>
+  <circle cx="200" cy="200" r="118" fill="#f5f2ee" stroke="#f7d96b" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="27.6" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">REST &amp; RECHARGE</textPath></text>
+    <text font-size="19" fill="#f7d96b" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · HEALTH</textPath></text>
+  </g>
+  <g fill="#f7d96b">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <circle cx="186" cy="206" r="80" fill="#f7d96b"/>
+  <circle cx="224" cy="180" r="66" fill="#f5f2ee"/>
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" fill="#4b4a9c">
+    <text x="222" y="200" font-size="38">Z</text><text x="250" y="166" font-size="28">z</text><text x="270" y="140" font-size="20">z</text>
+  </g>
+  <path d="M150,132 Q150,142 160,142 Q150,142 150,152 Q150,142 140,142 Q150,142 150,132 Z" fill="#4b4a9c"/>
+</svg>

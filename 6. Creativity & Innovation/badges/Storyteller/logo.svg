@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Storyteller badge">
+  <defs>
+    <path id="arc-top" d="M 66.5,200 A 133.5,133.5 0 0 1 333.5,200"/>
+    <path id="arc-bottom" d="M 42,200 A 158,158 0 0 0 358,200"/>
+  </defs>
+
+  <!-- Patch -->
+  <circle cx="200" cy="200" r="196" fill="#4f1e28"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#e8b04a" stroke-width="3" stroke-dasharray="7 6"/>
+  <circle cx="200" cy="200" r="172" fill="#8c3b4a"/>
+  <circle cx="200" cy="200" r="118" fill="#f8f0ea" stroke="#e8b04a" stroke-width="6"/>
+
+  <!-- Ring text -->
+  <g font-family="Fredoka, 'Arial Rounded MT Bold', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text font-size="32" fill="#ffffff" letter-spacing="3"><textPath href="#arc-top" startOffset="50%">STORYTELLER</textPath></text>
+    <text font-size="19" fill="#e8b04a" letter-spacing="5"><textPath href="#arc-bottom" startOffset="50%">COREXP · CREATIVITY</textPath></text>
+  </g>
+  <g fill="#e8b04a">
+    <polygon points="55,187 59,196 69,197 61,203 64,213 55,207 46,213 49,203 41,197 51,196"/>
+    <polygon points="345,187 349,196 359,197 351,203 354,213 345,207 336,213 339,203 331,197 341,196"/>
+  </g>
+
+  <!-- Icon -->
+  <rect x="168" y="218" width="34" height="16" fill="#4f1e28"/>
+  <rect x="146" y="230" width="78" height="50" rx="12" fill="#4f1e28"/>
+  <rect x="158" y="244" width="22" height="8" rx="4" fill="#ffffff" opacity="0.4"/>
+  <path d="M188,232 C200,190 222,146 268,122 C262,166 236,204 196,230 Z" fill="#ffffff" stroke="#4f1e28" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M186,236 L258,134" stroke="#4f1e28" stroke-width="3"/>
+  <g stroke="#4f1e28" stroke-width="3" stroke-linecap="round"><line x1="214" y1="198" x2="234" y2="196"/><line x1="226" y1="180" x2="248" y2="174"/><line x1="238" y1="162" x2="258" y2="152"/></g>
+  <path d="M130,140 Q130,154 144,154 Q130,154 130,168 Q130,154 116,154 Q130,154 130,140 Z" fill="#e8b04a"/>
+  <path d="M262,228 Q262,238 272,238 Q262,238 262,248 Q262,238 252,238 Q262,238 262,228 Z" fill="#e8b04a"/>
+</svg>
